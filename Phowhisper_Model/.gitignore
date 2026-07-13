@@ -1,0 +1,35 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook check-points
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# Model weights and checkpoints
+# Exclude model folders and training intermediate checkpoints
+models/*/
+!models/.gitkeep
+
+# Exclude logs and evaluation outputs
+outputs/*/
+!outputs/.gitkeep
+
+# Raw audio files and compressed datasets
+data/audios/*
+!data/audios/.gitkeep
+*.zip
+*.tar.gz
+*.tar
+*.gz
+*.rar
+*.7z
+
+# IDE specific settings
+.vscode/
+.idea/
