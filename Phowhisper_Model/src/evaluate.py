@@ -11,7 +11,7 @@ from tqdm import tqdm
 from src.config import TEST_CSV, OUTPUT_DIR, EVAL_RESULTS_FILE
 from src.model import load_asr_model
 from src.data_preparation import get_dataset_dict
-from src.utils import normalize_text
+from src.utils import normalize_text, load_audio
 
 # Load metrics
 wer_metric = evaluate.load("wer")
@@ -23,7 +23,7 @@ def transcribe(audio_path: str, processor, model, device) -> str:
     """
     try:
         # Load audio at 16kHz mono
-        audio_array, sr = librosa.load(audio_path, sr=16000, mono=True)
+        audio_array, sr = load_audio(audio_path, target_sr=16000, mono=True)
     except Exception as e:
         print(f"Error loading audio file {audio_path}: {e}")
         return ""

@@ -1,7 +1,7 @@
 import torch
-import librosa
 from dataclasses import dataclass
 from typing import Any, Dict, List
+from src.utils import load_audio
 
 @dataclass
 class OnTheFlySpeechCollator:
@@ -15,9 +15,9 @@ class OnTheFlySpeechCollator:
     def __call__(self, features: List[Dict[str, Any]]) -> Dict[str, torch.Tensor]:
         audio_arrays = []
         for f in features:
-            audio_array, sr = librosa.load(
+            audio_array, sr = load_audio(
                 f["audio_path"],
-                sr=self.sampling_rate,
+                target_sr=self.sampling_rate,
                 mono=True
             )
             audio_arrays.append(audio_array)

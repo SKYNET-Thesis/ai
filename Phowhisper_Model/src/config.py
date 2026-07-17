@@ -5,12 +5,13 @@ MODEL_NAME = "vinai/PhoWhisper-small"
 
 # Dataset Directories and Files
 DATA_DIR = "data"
+AUDIO_SCAN_DIR = DATA_DIR
 TRAIN_CSV = os.path.join(DATA_DIR, "train.csv")
 VAL_CSV = os.path.join(DATA_DIR, "val.csv")
 TEST_CSV = os.path.join(DATA_DIR, "test.csv")
 
 # Allowed audio extensions
-AUDIO_EXTS = (".mp3", ".wav", ".flac", ".m4a")
+AUDIO_EXTS = (".mp3", ".wav", ".flac", ".m4a", ".mp4")
 
 # Vietnamese CSV Columns mapping
 CSV_FILE_COLUMN = "tên file"

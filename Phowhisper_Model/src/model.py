@@ -20,7 +20,6 @@ def load_asr_model(model_dir: str, device: str = None):
     
     # Configure gradient checkpointing and caching properties
     model.config.use_cache = False
-    model.gradient_checkpointing_enable()
     
     # Disable token forcing config to predict language/task natively
     model.generation_config.forced_decoder_ids = None

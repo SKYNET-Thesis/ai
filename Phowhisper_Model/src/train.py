@@ -65,6 +65,7 @@ def main():
         num_train_epochs=args.epochs,
         fp16=use_fp16,
         gradient_checkpointing=True,
+        gradient_checkpointing_kwargs={"use_reentrant": False},
         eval_strategy="no",  # As configured in Kaggle notebook
         save_steps=200,
         logging_steps=25,
