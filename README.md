@@ -6,6 +6,10 @@
 
 > Replacing SmolVLA's OCR-focused vision backbone with modern, lightweight VLMs to boost robotic manipulation performance.
 
+<p align="center">
+  <img src="VISTA_banner.png" alt="VISTA Banner" width="100%">
+</p>
+
 ---
 
 ## Table of Contents
