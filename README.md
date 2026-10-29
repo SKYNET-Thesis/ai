@@ -114,3 +114,26 @@ The performance of the modified models will be benchmarked on two tasks of varyi
 | Nguyễn Lê Anh Quân    | SE         | Team Member |
 
 **Supervisor:** Mr. Giang-Nam Luu, Ph.D
+
+## Project tree
+
+D:.
+├───configs
+├───data
+├───experiments
+├───Phowhisper_Model
+│   ├───data
+│   │   └───audios
+│   ├───models
+│   ├───outputs
+│   └───src
+├───reports
+├───results
+├───scripts
+├───src
+└───thesis-ai
+    └───.venv
+        ├───Lib
+        │   └───site-packages
+        │       └───__pycache__
+        └───Scripts
