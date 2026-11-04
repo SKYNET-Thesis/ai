@@ -1,0 +1,4 @@
+﻿Model,Backbone,Backbone_Layers,Total_Used_Params_M,Trainable_Params_M,Conditioner_Params_M
+SMOL_NATIVE,SmolVLM2,,,99.880992,0.0
+FAST_F12,apple/FastVLM-0.5B,12.0,545.963536,102.248752,2.36776
+LFM2_L8,LiquidAI/LFM2-VL-450M,8.0,410.903344,102.716208,2.835216
