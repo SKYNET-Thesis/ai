@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SmolVLA architecture, from system to layer</title>
+<style>
+:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#fff;--fg:#2C2C2A;--mut:#5F5E5A;--bd:#D3D1C7;
+--g1:#F1EFE8;--g2:#5F5E5A;--g3:#2C2C2A;--t1:#E1F5EE;--t2:#0F6E56;--t3:#04342C;--c1:#FAECE7;--c2:#993C1D;--c3:#4A1B0C}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#1f1e1c;--fg:#F1EFE8;--mut:#B4B2A9;--bd:#444441;--g1:#444441;--g2:#B4B2A9;--g3:#F1EFE8;--t1:#085041;--t2:#5DCAA5;--t3:#E1F5EE;--c1:#712B13;--c2:#F0997B;--c3:#FAECE7}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#1f1e1c;--fg:#F1EFE8;--mut:#B4B2A9;--bd:#444441;--g1:#444441;--g2:#B4B2A9;--g3:#F1EFE8;--t1:#085041;--t2:#5DCAA5;--t3:#E1F5EE;--c1:#712B13;--c2:#F0997B;--c3:#FAECE7}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 16px 48px}
+h1{font-size:24px;font-weight:500;margin:0 0 4px}h2{font-size:18px;font-weight:500;margin:40px 0 4px}
+p{margin:0 0 12px;color:var(--mut);font-size:15px}
+.w{border:1px solid var(--bd);border-radius:12px;padding:8px;overflow-x:auto}
+svg{width:100%;min-width:560px;height:auto;display:block}
+text{font:14px system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}.th{font-weight:500}.ts{font-size:12px}
+.g rect{fill:var(--g1);stroke:var(--g2)}.g text{fill:var(--g3)}
+.t rect{fill:var(--t1);stroke:var(--t2)}.t text{fill:var(--t3)}
+.c rect{fill:var(--c1);stroke:var(--c2)}.c text{fill:var(--c3)}
+rect{stroke-width:.5}.arr{stroke:var(--mut);stroke-width:1.5;fill:none}.n{fill:var(--mut)}
+</style></head><body><main>
+<h1>SmolVLA architecture</h1>
+<p>From the full system down to the inside of a single action-expert layer. Based on the LeRobot implementation.</p>
+<h2>1. System overview</h2>
+<p>Images, text and state form a prefix run through 16 frozen VLM layers. The action expert denoises 50 actions against the cached prefix K,V, with 10 Euler steps.</p>
+<div class="w" id="d1"></div>
+<h2>2. Layer stack</h2>
+<p>Each expert layer reads the K,V of the VLM layer with the same index. Even layers are self-attention, odd layers are cross-attention.</p>
+<div class="w" id="d2"></div>
+<h2>3. Inside one expert layer</h2>
+<p>Both variants are Llama-style blocks. They differ in where K and V come from and which tokens the queries may see.</p>
+<div class="w" id="d3"></div>
+<p style="margin-top:20px;font-size:13px">Widths 960, 720, 320 and the 2048 MLP size are derived from the SmolVLM2-500M config and an expert width multiplier of 0.75. Verify against your checkpoint.</p>
+</main>
+<script>
+const M='<defs><marker id="m" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>';
+const T=(x,y,s,c='ts',a='middle')=>`<text class="${c}" x="${x}" y="${y}" text-anchor="${a}" dominant-baseline="central">${s}</text>`;
+const B=(k,x,y,w,h,t,s,d)=>`<g class="${k}"><rect x="${x}" y="${y}" width="${w}" height="${h}" rx="8"${d?' stroke-dasharray="4 3"':''}/>${s?T(x+w/2,y+h/2-9,t,'th')+T(x+w/2,y+h/2+10,s):T(x+w/2,y+h/2,t,'th')}</g>`;
+const C=(k,x,y,w,h,t,L)=>`<g class="${k}"><rect x="${x}" y="${y}" width="${w}" height="${h}" rx="16"/>${T(x+w/2,y+28,t,'th')}${L.map((l,i)=>T(x+w/2,y+56+i*20+(i==3?6:0),l)).join('')}</g>`;
+const A=(a,b,c,d)=>`<line class="arr" x1="${a}" y1="${b}" x2="${c}" y2="${d}" marker-end="url(#m)"/>`;
+const S=(id,h,body)=>document.getElementById(id).innerHTML=`<svg viewBox="0 0 680 ${h}" role="img">${M}${body}</svg>`;
+
+S('d1',560,
+B('g',40,20,130,44,'RGB images')+B('g',185,20,110,44,'Task text')+B('g',310,20,110,44,'Robot state')+B('c',470,20,170,44,'Noisy actions + τ')+
+[105,240,365,555].map(x=>A(x,64,x,98)+A(x,156,x,188)).join('')+
+B('t',40,100,130,56,'SigLIP','64 tokens/cam')+B('t',185,100,110,56,'Embed ×√d','≤48 tokens')+B('t',310,100,110,56,'state_proj','32→960')+B('c',470,100,170,56,'Action + time MLP','50 tokens × 720')+
+C('t',40,190,380,150,'VLM prefix, first 16 layers',['SmolLM2 decoder, frozen, width 960','Images + text: bidirectional','State token sees all, seen by none','Output: K,V for every layer'])+
+C('c',470,190,170,150,'Action expert',['16 layers, width 720','Alternating SA / CA','Causal over 50 actions','Trained from scratch'])+
+T(444,256,'K,V')+A(422,268,468,268)+A(230,340,230,378)+A(555,340,555,378)+
+B('g',40,380,380,56,'Prefix K,V cache','Computed once, reused in all 10 steps',1)+B('c',470,380,170,56,'Norm + out_proj','720→32: velocity v')+A(555,436,555,458)+B('g',470,460,170,56,'Euler, 10 steps','50×32 action chunk'));
+
+(()=>{let s=T(155,24,'VLM layers (frozen)','th')+T(340,24,'K,V')+T(525,24,'Action expert layers','th');
+[[0,44],[1,100],[2,156],[3,212],[14,312],[15,368]].forEach(([i,y])=>{const e=i%2==0;
+s+=B('g',40,y,230,44,'VLM layer '+i,'Self-attn + MLP')+A(272,y+22,408,y+22)+
+B(e?'c':'t',410,y,230,44,'Layer '+i+(e?': self-attention':': cross-attention'),e?'Prefix K,V + causal actions':'Prefix K,V only')});
+s+=T(340,288,'Layers 4 to 13 repeat the same pattern')+
+'<g class="c"><rect x="40" y="440" width="14" height="14" rx="3"/></g>'+T(62,447,'Expert self-attention (even index)','ts','start')+
+'<g class="t"><rect x="330" y="440" width="14" height="14" rx="3"/></g>'+T(352,447,'Expert cross-attention (odd index)','ts','start');
+S('d2',480,s)})();
+
+(()=>{let s=T(180,22,'Self-attention layer (even)','th')+T(510,22,'Cross-attention layer (odd)','th')+'<g transform="translate(0,36)">';
+const tail=(x,w,cx)=>B('g',x,362,w,36,'o_proj 960→720 + residual')+B('g',x,414,w,36,'RMSNorm')+B('c',x,466,w,50,'SwiGLU MLP + residual','720→2048→720')+[[346,360],[398,412],[450,464]].map(([a,b])=>A(cx,a,cx,b)).join('');
+s+=B('g',60,20,240,36,'Expert hidden (50×720)')+B('g',60,72,240,36,'RMSNorm')+
+B('c',60,124,72,44,'q_proj','720→960')+B('c',144,124,72,44,'k_proj','720→320')+B('c',228,124,72,44,'v_proj','720→320')+
+B('c',60,184,156,36,'RoPE on q, k')+B('t',60,236,240,44,'Concat with VLM K,V','[prefix ; own] on sequence')+B('c',60,296,240,50,'GQA attention','Full prefix + causal actions')+tail(60,240,180)+
+A(180,56,180,70)+[96,180,264].map(x=>A(x,108,x,122)).join('')+A(96,168,96,182)+A(180,168,180,182)+A(264,168,264,234)+A(138,220,138,234)+A(180,280,180,294)+
+B('g',370,20,140,36,'Expert hidden')+B('t',530,20,120,36,'VLM K,V')+B('g',370,72,140,36,'RMSNorm')+B('c',370,124,140,44,'q_proj','720→960')+B('c',530,124,120,44,'k/v proj','320→320 each')+B('c',370,184,140,36,'RoPE on q')+
+T(628,246,'K already rotated','ts','end')+T(628,264,'by the VLM','ts','end')+B('t',370,296,280,50,'Cross-attention','Keys and values: prefix only')+tail(370,280,510)+
+A(440,56,440,70)+A(590,56,590,122)+A(440,108,440,122)+A(440,168,440,182)+A(440,220,440,294)+A(640,168,640,294)+A(510,346,510,360)+'</g>';
+S('d3',600,s)})();
+</script></body></html>
