@@ -1,0 +1,22 @@
+model,metric,source,valid_episodes
+ACT,loss_action,logged_action_loss,
+ACT,mae,window.mae,111.0
+ACT,mse,window.mse,111.0
+ACT,nmae,window.nmae,111.0
+ACT,jerk_norm,window.jerk_in_chunk,111.0
+ACT,accel_norm,window.accel_in_chunk,111.0
+ACT,smoothness_ratio,window.smoothness_ratio,111.0
+SmolVLA,loss_action,loss_total_proxy,
+SmolVLA,mae,window.mae,111.0
+SmolVLA,mse,window.mse,111.0
+SmolVLA,nmae,window.nmae,111.0
+SmolVLA,jerk_norm,"episode.jerk_in_chunk, window.jerk_in_chunk",111.0
+SmolVLA,accel_norm,"episode.accel_in_chunk, window.accel_in_chunk",111.0
+SmolVLA,smoothness_ratio,window.smoothness_ratio,111.0
+SmollerVLA,loss_action,logged_action_loss,
+SmollerVLA,mae,window.mae,111.0
+SmollerVLA,mse,window.mse,111.0
+SmollerVLA,nmae,window.nmae,111.0
+SmollerVLA,jerk_norm,window.jerk_in_chunk,111.0
+SmollerVLA,accel_norm,window.accel_in_chunk,111.0
+SmollerVLA,smoothness_ratio,window.smoothness_ratio,111.0

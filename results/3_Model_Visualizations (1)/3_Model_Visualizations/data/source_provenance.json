@@ -1,0 +1,5 @@
+{
+  "ACT_validation": "/content/VLA_3_Model_Analysis/ACT/experiment/runs/act_s42/val_ckpt.csv",
+  "SmolVLA_validation": "/content/VLA_3_Model_Analysis/SmolVLA/experiment/runs/orig_s42/val_ckpt.csv",
+  "SmollerVLA_validation": "/content/VLA_3_Model_Analysis/SmollerVLA/experiment/runs/lfm_gate_s42/val_ckpt.csv"
+}

@@ -1,0 +1,36 @@
+{
+  "model_names": [
+    "ACT",
+    "SmolVLA",
+    "SmollerVLA"
+  ],
+  "test_mode": "clean_only",
+  "paired_episode_count": 111,
+  "test_episode_counts_in_original_files": {
+    "ACT": 112,
+    "SmolVLA": 111,
+    "SmollerVLA": 111
+  },
+  "val_checkpoint_count": {
+    "ACT": 20,
+    "SmolVLA": 20,
+    "SmollerVLA": 20
+  },
+  "generated_png_count": 60,
+  "model_inputs": {
+    "ACT": "/content/VLA_3_Model_Analysis/ACT",
+    "SmolVLA": "/content/VLA_3_Model_Analysis/SmolVLA",
+    "SmollerVLA": "/content/VLA_3_Model_Analysis/SmollerVLA"
+  },
+  "prior_sources": {
+    "ACT validation": "Earlier ACT notebook actual validation stdout (20 checkpoints)",
+    "ACT parameters, peak inference VRAM": "Earlier ACT notebook actual Cell E output"
+  },
+  "known_gaps": [
+    "ACT ZIP supplied here has no train_steps.csv, val_ckpt.csv or complexity.csv",
+    "ACT validation/parameter reference values from earlier ACT notebook should match current ACT run",
+    "ACT peak train VRAM and GPU-hours require separate actual training records",
+    "ACT test_dim_horizon.csv absent; horizon diagnostics use available model files",
+    "Bjump protocols differ (222 vs 2441 Smoller rows), so they are not pooled"
+  ]
+}
