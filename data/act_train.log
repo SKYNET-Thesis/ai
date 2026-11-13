@@ -1,253 +1,0 @@
-INFO 2026-11-12 19:09:12 ot_train.py:565 {'accelerator': {'activation_checkpointing': {'mode': <ActivationCheckpointingMode.NONE: 'none'>},
-                 'compile': {'backend': 'inductor',
-                             'enabled': False,
-                             'mode': None,
-                             'regional': True},
-                 'ddp': {'find_unused_parameters': True,
-                         'gradient_as_bucket_view': False,
-                         'static_graph': False},
-                 'fsdp': {'cpu_offload': False,
-                          'ignored_modules': None,
-                          'min_num_params': None,
-                          'mixed_precision_policy': {'cast_forward_inputs': True,
-                                                     'output_dtype': None,
-                                                     'param_dtype': None,
-                                                     'reduce_dtype': None},
-                          'reshard_after_forward': True,
-                          'wrap_modules': None},
-                 'grad_scaler': {'backoff_factor': 0.5,
-                                 'growth_factor': 2.0,
-                                 'growth_interval': 2000,
-                                 'init_scale': 65536.0},
-                 'gradient_accumulation': {'steps': 1,
-                                           'sync_each_batch': False},
-                 'init_process_group': {'backend': 'nccl',
-                                        'init_method': None,
-                                        'timeout': None},
-                 'mixed_precision': 'no'},
- 'batch_size': 16,
- 'checkpoint_format': <CheckpointFormat.SAFETENSORS: 'safetensors'>,
- 'checkpoint_path': None,
- 'cudnn_deterministic': False,
- 'dataloader_multiprocessing_context': 'spawn',
- 'dataset': {'depth_output_unit': 'mm',
-             'episodes': None,
-             'eval_split': 0.0,
-             'exclude_episodes': None,
-             'image_transforms': {'backend': 'dataloader',
-                                  'enable': False,
-                                  'gpu_chunk_size': 32,
-                                  'gpu_compile': True,
-                                  'max_num_transforms': 3,
-                                  'random_order': False,
-                                  'tfs': {'affine': {'kwargs': {'degrees': [-5.0,
-                                                                            5.0],
-                                                                'translate': [0.05,
-                                                                              0.05]},
-                                                     'type': 'RandomAffine',
-                                                     'weight': 1.0},
-                                          'brightness': {'kwargs': {'brightness': [0.8,
-                                                                                   1.2]},
-                                                         'type': 'ColorJitter',
-                                                         'weight': 1.0},
-                                          'contrast': {'kwargs': {'contrast': [0.8,
-                                                                               1.2]},
-                                                       'type': 'ColorJitter',
-                                                       'weight': 1.0},
-                                          'hue': {'kwargs': {'hue': [-0.05,
-                                                                     0.05]},
-                                                  'type': 'ColorJitter',
-                                                  'weight': 1.0},
-                                          'saturation': {'kwargs': {'saturation': [0.5,
-                                                                                   1.5]},
-                                                         'type': 'ColorJitter',
-                                                         'weight': 1.0},
-                                          'sharpness': {'kwargs': {'sharpness': [0.5,
-                                                                                 1.5]},
-                                                        'type': 'SharpnessJitter',
-                                                        'weight': 1.0}}},
-             'repo_id': 'yamaisanerd/Halogen_239_Skynet_WIP',
-             'repo_type': 'dataset',
-             'return_uint8': False,
-             'revision': None,
-             'root': None,
-             'streaming': True,
-             'streaming_byte_budget_gb': 8.0,
-             'streaming_decode_threads': 2,
-             'streaming_decoded_queue_size': 8,
-             'streaming_episode_pool_size': None,
-             'streaming_native_http_connections': None,
-             'streaming_native_http_subranges': 1,
-             'streaming_prefetch_episodes': 8,
-             'streaming_sampling_strategy': <StreamingSamplingStrategy.REMAINING: 'remaining'>,
-             'streaming_sidecar_lock_timeout_s': 1800,
-             'use_imagenet_stats': True,
-             'video_backend': 'torchcodec',
-             'video_decoder_cache_size': None},
- 'ema': None,
- 'env': None,
- 'env_eval_freq': 20000,
- 'eval': {'batch_size': 2,
-          'max_episode_steps': None,
-          'n_episodes': 50,
-          'recording': False,
-          'recording_private': False,
-          'recording_repo_id': None,
-          'use_async_envs': True},
- 'eval_steps': 0,
- 'job': {'detach': False,
-         'image': 'huggingface/lerobot-gpu:latest',
-         'tags': [],
-         'target': None,
-         'timeout': '2d'},
- 'job_name': 'act_train',
- 'log_freq': 200,
- 'max_eval_samples': 0,
- 'num_workers': 2,
- 'optimizer': {'betas': [0.9, 0.999],
-               'eps': 1e-08,
-               'fused': None,
-               'grad_clip_norm': 10.0,
-               'lr': 1e-05,
-               'type': 'adamw',
-               'weight_decay': 0.0001},
- 'output_dir': '/kaggle/working/act_train',
- 'parallelism': {'cfg_parallel': 1,
-                 'context_parallel': {'ring_degree': 1, 'ulysses_degree': 1},
-                 'dp_replicate': 2,
-                 'dp_shard': 1},
- 'peft': None,
- 'persistent_workers': True,
- 'policy': {'chunk_size': 100,
-            'device': 'cuda',
-            'dim_feedforward': 3200,
-            'dim_model': 512,
-            'dropout': 0.1,
-            'dtype': None,
-            'feedforward_activation': 'relu',
-            'input_features': {},
-            'kl_weight': 10.0,
-            'latent_dim': 32,
-            'license': None,
-            'n_action_steps': 100,
-            'n_decoder_layers': 1,
-            'n_encoder_layers': 4,
-            'n_heads': 8,
-            'n_obs_steps': 1,
-            'n_vae_encoder_layers': 4,
-            'normalization_mapping': {'ACTION': <NormalizationMode.MEAN_STD: 'MEAN_STD'>,
-                                      'STATE': <NormalizationMode.MEAN_STD: 'MEAN_STD'>,
-                                      'VISUAL': <NormalizationMode.MEAN_STD: 'MEAN_STD'>},
-            'optimizer_fused': None,
-            'optimizer_lr': 1e-05,
-            'optimizer_lr_backbone': 1e-05,
-            'optimizer_weight_decay': 0.0001,
-            'output_features': {},
-            'pre_norm': False,
-            'pretrained_backbone_weights': 'ResNet18_Weights.IMAGENET1K_V1',
-            'pretrained_path': None,
-            'pretrained_revision': None,
-            'private': None,
-            'push_to_hub': False,
-            'replace_final_stride_with_dilation': False,
-            'repo_id': None,
-            'tags': None,
-            'temporal_ensemble_coeff': None,
-            'type': 'act',
-            'use_amp': False,
-            'use_peft': False,
-            'use_vae': True,
-            'vision_backbone': 'resnet18'},
- 'prefetch_factor': 4,
- 'rename_map': {},
- 'resume': False,
- 'reward_model': None,
- 'sample_weighting': None,
- 'save_checkpoint': True,
- 'save_checkpoint_to_hub': False,
- 'save_freq': 25000,
- 'scheduler': None,
- 'seed': 1000,
- 'steps': 100000,
- 'tf32': True,
- 'tolerance_s': 0.0001,
- 'trackio': {'capture_console': True,
-             'disable_artifact': True,
-             'enable': False,
-             'private': None,
-             'project': 'lerobot',
-             'resume': None,
-             'run_name': None,
-             'space_id': None},
- 'use_policy_training_preset': True}
-INFO 2026-11-12 19:09:12 ot_train.py:572 Logs will be saved locally.
-INFO 2026-11-12 19:09:12 ot_train.py:589 Creating dataset
-Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-WARNING 2026-11-12 19:09:13 ls/_http.py:993 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-Fetching 4 files:  25%|██▌       | 1/4 [00:00<00:00,  3.97it/s]Fetching 4 files:  75%|███████▌  | 3/4 [00:01<00:00,  2.66it/s]Fetching 4 files: 100%|██████████| 4/4 [00:01<00:00,  3.65it/s]
-Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 914.39it/s]
-INFO 2026-11-12 19:09:15 _sidecar.py:256 Resolving training-time MP4 sidecar for yamaisanerd/Halogen_239_Skynet_WIP@v3.0 (37 files)
-INFO 2026-11-12 19:09:15 g/sidecar.py:86 Looking for published MP4 sidecar for yamaisanerd/Halogen_239_Skynet_WIP@v3.0
-INFO 2026-11-12 19:09:15 g/sidecar.py:94 Building MP4 sidecar for yamaisanerd/Halogen_239_Skynet_WIP@v3.0
-INFO 2026-11-12 19:09:15 manifest.py:295 Indexed 1/37 MP4 files for streaming sidecar
-INFO 2026-11-12 19:09:16 manifest.py:295 Indexed 2/37 MP4 files for streaming sidecar
-INFO 2026-11-12 19:09:16 manifest.py:295 Indexed 3/37 MP4 files for streaming sidecar
-INFO 2026-11-12 19:09:17 manifest.py:295 Indexed 4/37 MP4 files for streaming sidecar
-INFO 2026-11-12 19:09:17 manifest.py:295 Indexed 5/37 MP4 files for streaming sidecar
-INFO 2026-11-12 19:09:17 manifest.py:295 Indexed 6/37 MP4 files for streaming sidecar
-INFO 2026-11-12 19:09:18 manifest.py:295 Indexed 7/37 MP4 files for streaming sidecar
-INFO 2026-11-12 19:09:19 manifest.py:295 Indexed 8/37 MP4 files for streaming sidecar
-INFO 2026-11-12 19:09:19 manifest.py:295 Indexed 9/37 MP4 files for streaming sidecar
-INFO 2026-11-12 19:09:19 manifest.py:295 Indexed 10/37 MP4 files for streaming sidecar
-INFO 2026-11-12 19:09:20 manifest.py:295 Indexed 11/37 MP4 files for streaming sidecar
-INFO 2026-11-12 19:09:20 manifest.py:295 Indexed 12/37 MP4 files for streaming sidecar
-INFO 2026-11-12 19:09:20 manifest.py:295 Indexed 13/37 MP4 files for streaming sidecar
-INFO 2026-11-12 19:09:21 manifest.py:295 Indexed 14/37 MP4 files for streaming sidecar
-INFO 2026-11-12 19:09:21 manifest.py:295 Indexed 15/37 MP4 files for streaming sidecar
-INFO 2026-11-12 19:09:22 manifest.py:295 Indexed 16/37 MP4 files for streaming sidecar
-INFO 2026-11-12 19:09:22 manifest.py:295 Indexed 17/37 MP4 files for streaming sidecar
-INFO 2026-11-12 19:09:22 manifest.py:295 Indexed 18/37 MP4 files for streaming sidecar
-INFO 2026-11-12 19:09:23 manifest.py:295 Indexed 19/37 MP4 files for streaming sidecar
-INFO 2026-11-12 19:09:23 manifest.py:295 Indexed 20/37 MP4 files for streaming sidecar
-INFO 2026-11-12 19:09:23 manifest.py:295 Indexed 21/37 MP4 files for streaming sidecar
-INFO 2026-11-12 19:09:24 manifest.py:295 Indexed 22/37 MP4 files for streaming sidecar
-INFO 2026-11-12 19:09:24 manifest.py:295 Indexed 23/37 MP4 files for streaming sidecar
-INFO 2026-11-12 19:09:25 manifest.py:295 Indexed 24/37 MP4 files for streaming sidecar
-INFO 2026-11-12 19:09:25 manifest.py:295 Indexed 25/37 MP4 files for streaming sidecar
-INFO 2026-11-12 19:09:26 manifest.py:295 Indexed 26/37 MP4 files for streaming sidecar
-INFO 2026-11-12 19:09:26 manifest.py:295 Indexed 27/37 MP4 files for streaming sidecar
-INFO 2026-11-12 19:09:27 manifest.py:295 Indexed 28/37 MP4 files for streaming sidecar
-INFO 2026-11-12 19:09:27 manifest.py:295 Indexed 29/37 MP4 files for streaming sidecar
-INFO 2026-11-12 19:09:27 manifest.py:295 Indexed 30/37 MP4 files for streaming sidecar
-INFO 2026-11-12 19:09:28 manifest.py:295 Indexed 31/37 MP4 files for streaming sidecar
-INFO 2026-11-12 19:09:28 manifest.py:295 Indexed 32/37 MP4 files for streaming sidecar
-INFO 2026-11-12 19:09:29 manifest.py:295 Indexed 33/37 MP4 files for streaming sidecar
-INFO 2026-11-12 19:09:29 manifest.py:295 Indexed 34/37 MP4 files for streaming sidecar
-INFO 2026-11-12 19:09:30 manifest.py:295 Indexed 35/37 MP4 files for streaming sidecar
-INFO 2026-11-12 19:09:30 manifest.py:295 Indexed 36/37 MP4 files for streaming sidecar
-INFO 2026-11-12 19:09:31 manifest.py:295 Indexed 37/37 MP4 files for streaming sidecar
-INFO 2026-11-12 19:09:32 ot_train.py:628 Creating policy
-Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 938.27it/s]
-Downloading: "https://download.pytorch.org/models/resnet18-f37072fd.pth" to /root/.cache/torch/hub/checkpoints/resnet18-f37072fd.pth
-  0%|          | 0.00/44.7M [00:00<?, ?B/s]Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 644.56it/s]
- 31%|███       | 13.6M/44.7M [00:00<00:00, 142MB/s] 85%|████████▍ | 37.8M/44.7M [00:00<00:00, 207MB/s]100%|██████████| 44.7M/44.7M [00:00<00:00, 205MB/s]
-INFO 2026-11-12 19:09:33 ot_train.py:723 Creating optimizer and scheduler
-INFO 2026-11-12 19:09:33 ot_train.py:784 Output dir: /kaggle/working/act_train
-INFO 2026-11-12 19:09:33 ot_train.py:791 cfg.steps=100000 (100K)
-INFO 2026-11-12 19:09:33 ot_train.py:792 dataset.num_frames=134682 (135K)
-INFO 2026-11-12 19:09:33 ot_train.py:793 dataset.num_episodes=239
-INFO 2026-11-12 19:09:33 ot_train.py:794 Effective batch size: 16 x 2 dp workers x 1 grad accum = 32 (topology: dp_replicate=2, dp_shard=1)
-INFO 2026-11-12 19:09:33 ot_train.py:799 num_learnable_params=51597190 (52M)
-INFO 2026-11-12 19:09:33 ot_train.py:800 num_total_params=51597190 (52M)
-Training:   0%|          | 0/100000 [00:00<?, ?step/s]INFO 2026-11-12 19:09:33 ot_train.py:848 Start offline training on a fixed dataset, with effective batch size: 32
-Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-[rank0]:[W1112 19:10:18.798723503 reducer.cpp:1502] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
-[rank1]:[W1112 19:10:18.798754910 reducer.cpp:1502] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
-Training:   0%|          | 1/100000 [00:50<1398:01:18, 50.33s/step]Training:   0%|          | 2/100000 [00:51<599:18:45, 21.58s/step] Training:   0%|          | 3/100000 [00:53<344:11:11, 12.39s/step]Training:   0%|          | 4/100000 [00:54<224:18:01,  8.08s/step]Training:   0%|          | 5/100000 [00:56<158:03:46,  5.69s/step]Training:   0%|          | 6/100000 [00:57<118:08:39,  4.25s/step]Training:   0%|          | 7/100000 [00:59<92:49:22,  3.34s/step] Training:   0%|          | 8/100000 [01:00<76:16:41,  2.75s/step]Training:   0%|          | 9/100000 [01:02<65:12:06,  2.35s/step]Training:   0%|          | 10/100000 [01:03<57:44:23,  2.08s/step]Training:   0%|          | 11/100000 [01:04<52:39:38,  1.90s/step]Training:   0%|          | 12/100000 [01:06<49:12:28,  1.77s/step]Training:   0%|          | 13/100000 [01:07<46:50:30,  1.69s/step]Training:   0%|          | 14/100000 [01:09<45:15:08,  1.63s/step]Training:   0%|          | 15/100000 [01:10<44:11:50,  1.59s/step]Training:   0%|          | 16/100000 [01:12<43:26:41,  1.56s/step]Training:   0%|          | 17/100000 [01:13<43:03:11,  1.55s/step]Training:   0%|          | 18/100000 [01:15<42:37:57,  1.54s/step]Training:   0%|          | 19/100000 [01:16<42:25:29,  1.53s/step]Training:   0%|          | 20/100000 [01:18<42:19:45,  1.52s/step]Training:   0%|          | 21/100000 [01:20<42:18:50,  1.52s/step]Training:   0%|          | 22/100000 [01:21<42:20:56,  1.52s/step]Training:   0%|          | 23/100000 [01:23<42:54:39,  1.55s/step]Training:   0%|          | 24/100000 [01:24<42:49:42,  1.54s/step]
