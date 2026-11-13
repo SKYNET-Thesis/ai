@@ -1,0 +1,22 @@
+visualization,status,source,note
+01_training_loss.png,GENERATED,train_steps.csv,
+02_gradient_norm.png,GENERATED,train_steps.csv,
+03_learning_rate.png,GENERATED,train_steps.csv,
+04_training_step_time.png,GENERATED,train_steps.csv,
+05_training_throughput.png,GENERATED,train_steps.csv,
+06_gradient_clipping.png,SKIPPED,,No valid measured clipping flags
+07_validation_mae.png,SKIPPED,,Missing validation MAE
+08_validation_mse.png,SKIPPED,,Missing validation MSE
+09_condition_mae.png,GENERATED,test_episode.csv,
+10_condition_delta_mae.png,GENERATED,test_episode.csv,
+11_task_metrics.png,GENERATED,act_task_metrics.csv / test_window.csv,
+12_latency_distribution.png,GENERATED,latency_raw.csv,
+13_complexity_gflops.png,SKIPPED,,No measured GFLOPs
+14_complexity_gmacs.png,SKIPPED,,No measured GMACs
+15_model_parameters.png,GENERATED,complexity.csv,
+16_test_episode_mae_distribution.png,GENERATED,test_episode.csv,
+17_chunk_boundary_jump.png,GENERATED,test_bjump.csv,
+18_action_horizon_EXISTING.png,COPIED_EXISTING,reports/act_horizon_error.png,Original image reused; not recomputed
+19_action_dimension_error.png,SKIPPED,,test_dim_horizon.csv was not exported
+20_statistical_forest_plot.png,GENERATED,statistical_results.csv,
+21_gate_heatmap.png,SKIPPED,,Not applicable to ACT without gated attention

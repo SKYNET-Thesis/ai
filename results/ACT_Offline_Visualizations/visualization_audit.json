@@ -1,0 +1,142 @@
+{
+  "model": "ACT",
+  "experiment": "/content/ACT_Offline_Testing_Export/ACT_Offline_Testing_Export/experiment",
+  "output_directory": "/content/ACT_Offline_Testing_Export/ACT_Offline_Testing_Export/experiment/reports/visualizations",
+  "rules": [
+    "Figures generated only from available recorded data.",
+    "Missing metrics are skipped, not filled with zero.",
+    "Language conditions are not applicable to non-language-conditioned ACT.",
+    "Bjump requires verified consecutive action chunks.",
+    "Statistical forest plots require valid model contrasts.",
+    "Existing horizon PNG may be copied but is not a new computation.",
+    "Gate heatmap is not applicable to ACT without gating."
+  ],
+  "visualizations": [
+    {
+      "visualization": "01_training_loss.png",
+      "status": "GENERATED",
+      "source": "train_steps.csv",
+      "note": ""
+    },
+    {
+      "visualization": "02_gradient_norm.png",
+      "status": "GENERATED",
+      "source": "train_steps.csv",
+      "note": ""
+    },
+    {
+      "visualization": "03_learning_rate.png",
+      "status": "GENERATED",
+      "source": "train_steps.csv",
+      "note": ""
+    },
+    {
+      "visualization": "04_training_step_time.png",
+      "status": "GENERATED",
+      "source": "train_steps.csv",
+      "note": ""
+    },
+    {
+      "visualization": "05_training_throughput.png",
+      "status": "GENERATED",
+      "source": "train_steps.csv",
+      "note": ""
+    },
+    {
+      "visualization": "06_gradient_clipping.png",
+      "status": "SKIPPED",
+      "source": "",
+      "note": "No valid measured clipping flags"
+    },
+    {
+      "visualization": "07_validation_mae.png",
+      "status": "SKIPPED",
+      "source": "",
+      "note": "Missing validation MAE"
+    },
+    {
+      "visualization": "08_validation_mse.png",
+      "status": "SKIPPED",
+      "source": "",
+      "note": "Missing validation MSE"
+    },
+    {
+      "visualization": "09_condition_mae.png",
+      "status": "GENERATED",
+      "source": "test_episode.csv",
+      "note": ""
+    },
+    {
+      "visualization": "10_condition_delta_mae.png",
+      "status": "GENERATED",
+      "source": "test_episode.csv",
+      "note": ""
+    },
+    {
+      "visualization": "11_task_metrics.png",
+      "status": "GENERATED",
+      "source": "act_task_metrics.csv / test_window.csv",
+      "note": ""
+    },
+    {
+      "visualization": "12_latency_distribution.png",
+      "status": "GENERATED",
+      "source": "latency_raw.csv",
+      "note": ""
+    },
+    {
+      "visualization": "13_complexity_gflops.png",
+      "status": "SKIPPED",
+      "source": "",
+      "note": "No measured GFLOPs"
+    },
+    {
+      "visualization": "14_complexity_gmacs.png",
+      "status": "SKIPPED",
+      "source": "",
+      "note": "No measured GMACs"
+    },
+    {
+      "visualization": "15_model_parameters.png",
+      "status": "GENERATED",
+      "source": "complexity.csv",
+      "note": ""
+    },
+    {
+      "visualization": "16_test_episode_mae_distribution.png",
+      "status": "GENERATED",
+      "source": "test_episode.csv",
+      "note": ""
+    },
+    {
+      "visualization": "17_chunk_boundary_jump.png",
+      "status": "GENERATED",
+      "source": "test_bjump.csv",
+      "note": ""
+    },
+    {
+      "visualization": "18_action_horizon_EXISTING.png",
+      "status": "COPIED_EXISTING",
+      "source": "reports/act_horizon_error.png",
+      "note": "Original image reused; not recomputed"
+    },
+    {
+      "visualization": "19_action_dimension_error.png",
+      "status": "SKIPPED",
+      "source": "",
+      "note": "test_dim_horizon.csv was not exported"
+    },
+    {
+      "visualization": "20_statistical_forest_plot.png",
+      "status": "GENERATED",
+      "source": "statistical_results.csv",
+      "note": ""
+    },
+    {
+      "visualization": "21_gate_heatmap.png",
+      "status": "SKIPPED",
+      "source": "",
+      "note": "Not applicable to ACT without gated attention"
+    }
+  ]
+}
