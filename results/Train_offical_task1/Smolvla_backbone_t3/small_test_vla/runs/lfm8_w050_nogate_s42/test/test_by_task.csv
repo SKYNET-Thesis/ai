@@ -1,0 +1,6 @@
+,mae,mae,nmae,nmae,mse,mse,jerk_norm,jerk_norm
+,mean,count,mean,count,mean,count,mean,count
+task,,,,,,,,
+ put all object on the table into the white box,6.5114,8,0.2256,8,145.3406,8,0.09,8
+"pick up pens and rubber, place them into the white box",7.2628,54,0.2506,54,137.213,54,0.0994,54
+put the pens and the rubber into the white box,6.4774,50,0.228,50,123.5598,50,0.0966,50

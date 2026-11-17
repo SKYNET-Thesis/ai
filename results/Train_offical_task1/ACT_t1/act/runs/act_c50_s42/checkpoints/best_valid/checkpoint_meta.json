@@ -1,0 +1,11 @@
+{
+  "step": 2410,
+  "val_loss": 0.7613406782013648,
+  "split_hash": "6a12c85352049b488aa6b220d79adb865282f80d525e7c9b5cda20eb59cb0d8d",
+  "config_hash": "a86bc9c5f8989c15ce5edb6b025cceba6fc317f1371927627a3c0236d8ee21b9",
+  "git_sha": "nogit:632d7594af49",
+  "backbone_weights": "ResNet18_Weights.IMAGENET1K_V1",
+  "wall_time_s": 12742.547810077667,
+  "sha256": "e4a56e084662e5f540002c38bf7a5beeb25c076ab5185e12757ee10a5fcc548a",
+  "n_tensors": 234
+}

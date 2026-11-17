@@ -1,0 +1,3543 @@
+{
+  "summary": {
+    "verified_pretrained": 76,
+    "unverified_pretrained": 197,
+    "params_by_source": {
+      "scratch_trained": 51938928,
+      "pretrained_frozen": 306083328
+    }
+  },
+  "warnings": [
+    "197 LFM tensors could not be matched to Hugging Face key names; 76 were verified equal"
+  ],
+  "rows": [
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.0.self_attn.q_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 460800,
+      "sha256": "2c18d1536ab439351040ebf7d2224756adc554a2128d853545a1066b38a10b25"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.0.self_attn.k_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 153600,
+      "sha256": "c88658af60fc2cadc7fed561c8ef77262c8dcbccce152a54054372b2a5c37c8e"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.0.self_attn.v_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 153600,
+      "sha256": "09d3c35304aeab8929423c4b45a58886d4b20e9fc4bd4d4942a4083638ecbd31"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.0.self_attn.o_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 460800,
+      "sha256": "5fa54e8623efe2e34e0b51b4180c8d0a213101ebf9f265824af26e2059f1f488"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.0.mlp.gate_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 614400,
+      "sha256": "05c458423ef94351bc60a0a7554ecc0ced4e78919a4f616b8d6acb08fab4f168"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.0.mlp.up_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 614400,
+      "sha256": "85d86325555b57eadf5216596a354202fb4348c2f0de4f0871214429f702587a"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.0.mlp.down_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 614400,
+      "sha256": "9ea50b75c7e40055a2c580eba88e7ec5e1b5374b17b6571d754d97658d4997c2"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.0.input_layernorm.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 480,
+      "sha256": "6455c0dfdea9fcc7327c60fdb1d1540f6b862193dd1598ba83978caadea603b9"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.0.post_attention_layernorm.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 480,
+      "sha256": "6455c0dfdea9fcc7327c60fdb1d1540f6b862193dd1598ba83978caadea603b9"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.1.self_attn.q_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 460800,
+      "sha256": "bc1855b2d1218051a55f89bae9a5fe409114a12a91f98d7f09d8933c545bc989"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.1.self_attn.k_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 102400,
+      "sha256": "c1723454db724d278c1001c05cd0b27f2365350650ef61123977f0c0938a8acf"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.1.self_attn.v_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 102400,
+      "sha256": "650e6c542d9e437ed9e36751bb892d7b62feea0f2f5544c9b92004fcdc916ac7"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.1.self_attn.o_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 460800,
+      "sha256": "6733532734dcef44ff2ee4c071a295168d2df9d15e6a99623235b069d51373c9"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.1.mlp.gate_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 614400,
+      "sha256": "5ffdb25b99042748be5a85b3621571eff74da574500a73f7f8c4b9e5c011be42"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.1.mlp.up_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 614400,
+      "sha256": "88a18fc561f7e096163fed306b38ebddaa6255a80bcd0f6bacbe9cc29cc1c72c"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.1.mlp.down_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 614400,
+      "sha256": "4a41c16749920ea4110e90be03a43ab086980ddbb44376bf23f7fa1aa450f148"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.1.input_layernorm.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 480,
+      "sha256": "6455c0dfdea9fcc7327c60fdb1d1540f6b862193dd1598ba83978caadea603b9"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.1.post_attention_layernorm.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 480,
+      "sha256": "6455c0dfdea9fcc7327c60fdb1d1540f6b862193dd1598ba83978caadea603b9"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.2.self_attn.q_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 460800,
+      "sha256": "e7156c1aa9066e5e8597d580b5b656d1068fab8421e6a71d683e6c347d4dd6be"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.2.self_attn.k_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 153600,
+      "sha256": "b85e2df35d1c3de81aaa8e2d18aec9d0bc8ea47f1711fd0e2740942a53ee27f3"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.2.self_attn.v_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 153600,
+      "sha256": "6cbaa3ac4d4db78fd56235d9ed3d250c0998a6e109cd44e7db9c02a652fad8a3"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.2.self_attn.o_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 460800,
+      "sha256": "99e06c6869dc8429a637edb33d10b4534ab9869a49ec6df4e622e764e3f12a67"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.2.mlp.gate_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 614400,
+      "sha256": "e40e7afd692ac44b5018d763c7aee5b861c9d43bd49af4d89a53b8ed3c46d8a1"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.2.mlp.up_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 614400,
+      "sha256": "e2cf662e18f69487040126044cca5f214e145ae64a06d6e988438b605112dcc4"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.2.mlp.down_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 614400,
+      "sha256": "eacfdad2cb4f31ed8bc0ec022147fb385afb1e16bc168fa397158a33c394eee3"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.2.input_layernorm.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 480,
+      "sha256": "6455c0dfdea9fcc7327c60fdb1d1540f6b862193dd1598ba83978caadea603b9"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.2.post_attention_layernorm.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 480,
+      "sha256": "6455c0dfdea9fcc7327c60fdb1d1540f6b862193dd1598ba83978caadea603b9"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.3.self_attn.q_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 460800,
+      "sha256": "0578b22cd3636f0f2dca42263df53fb30c8f7ccc22083d4d3723e048c974a5fb"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.3.self_attn.k_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 102400,
+      "sha256": "bcba7493129ec3f5ad463912eb1c4929476c63c093a40c223d74b78bbcfbc5d5"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.3.self_attn.v_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 102400,
+      "sha256": "fcf5829c922be055f84ea3e451a9d5e650c28ecb6ceef853dcf17b8cbe8cc4a5"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.3.self_attn.o_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 460800,
+      "sha256": "c4f9a1deeab266d28e97ad936c3d117ee219fda70bb8f1ef93e73975d0bbd8a4"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.3.mlp.gate_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 614400,
+      "sha256": "1145b4f7997bb52272006148f0948006d5d2c32643879da6a3402911449c2d9f"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.3.mlp.up_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 614400,
+      "sha256": "c2ab194c41c831e32138c0dbae5e283317fcc538adf7ff0cb39e88ff82f6c671"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.3.mlp.down_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 614400,
+      "sha256": "c7c2d9b39bc04fac2679e20e815c3855e8db6f1eb4d6c9a523012c25f77f4ec0"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.3.input_layernorm.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 480,
+      "sha256": "6455c0dfdea9fcc7327c60fdb1d1540f6b862193dd1598ba83978caadea603b9"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.3.post_attention_layernorm.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 480,
+      "sha256": "6455c0dfdea9fcc7327c60fdb1d1540f6b862193dd1598ba83978caadea603b9"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.4.self_attn.q_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 460800,
+      "sha256": "9d2c3bfe4a46b13caffa4fe801148bf46d95a0fe9d0ebe1e67ee1dfad2d5a09c"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.4.self_attn.k_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 153600,
+      "sha256": "3249e048169ccc805b73c063d04715a15f6cb71051352f44acb12b96c36ba8ae"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.4.self_attn.v_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 153600,
+      "sha256": "9a797d2109f055789b75c41dd67b8492f318fd95dba116b800e78d9e9eeb5a67"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.4.self_attn.o_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 460800,
+      "sha256": "0cbbfd66fef86408b642a06a8b62aeccd9e12aed15633504046f0cc223b5a860"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.4.mlp.gate_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 614400,
+      "sha256": "a2cb9722420ccbb66fc46d79c9e4f15e28b75e3fc3e4b724a4b58f2009dd87aa"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.4.mlp.up_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 614400,
+      "sha256": "2d2caed6fbd077443d3ddb8c88e314fda369480d83e2a2eb1e7ec1f7d87926b4"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.4.mlp.down_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 614400,
+      "sha256": "688a27a49428e916d34be934ea1fe73d90c7971fce5361e5ba1dcf51fda49751"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.4.input_layernorm.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 480,
+      "sha256": "6455c0dfdea9fcc7327c60fdb1d1540f6b862193dd1598ba83978caadea603b9"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.4.post_attention_layernorm.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 480,
+      "sha256": "6455c0dfdea9fcc7327c60fdb1d1540f6b862193dd1598ba83978caadea603b9"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.5.self_attn.q_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 460800,
+      "sha256": "82fae12a8fd91ff0b44c87723459785ba0c04538ee66a70c0a2e8438ef1d9b5a"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.5.self_attn.k_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 102400,
+      "sha256": "6a1348653b5a39239976320e321ec64f109b3a4b0b8b32ac967f45203976296d"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.5.self_attn.v_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 102400,
+      "sha256": "53bff3855273486445d11aecc18603088cae129825345102e8519a8b1a17af83"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.5.self_attn.o_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 460800,
+      "sha256": "2b8b266d6cb39a806e23ac5de244bfb327726d4f999d5b3f403dcd216a15df2d"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.5.mlp.gate_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 614400,
+      "sha256": "cf54a8d2a91b08605bfabee668532a58336d4cc0f5cd820c3930a3426de68e4e"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.5.mlp.up_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 614400,
+      "sha256": "b2c19c57cae27001e372c99034fbbe246f0b7ce527787088d2322e51fd31f96e"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.5.mlp.down_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 614400,
+      "sha256": "fdb1195d617dd97cc1b4468c5091ebacadb631867f73607978016412498d504b"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.5.input_layernorm.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 480,
+      "sha256": "6455c0dfdea9fcc7327c60fdb1d1540f6b862193dd1598ba83978caadea603b9"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.5.post_attention_layernorm.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 480,
+      "sha256": "6455c0dfdea9fcc7327c60fdb1d1540f6b862193dd1598ba83978caadea603b9"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.6.self_attn.q_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 460800,
+      "sha256": "0b2e6dd9b0d774ce3928bb11772132ae75d5dc56a714bcf51d1270a1f4fa9443"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.6.self_attn.k_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 153600,
+      "sha256": "9b5f79d440c6c055b01e59b13d57585cc633b2b59b0e4ff876792d18f3e88751"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.6.self_attn.v_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 153600,
+      "sha256": "4eeeb89897010feb89f9ad8668f5fffb3b746a18a509c018a127fe30b28117db"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.6.self_attn.o_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 460800,
+      "sha256": "d05ac6c759f86e3fc8333652d30e9e23ffed4801419e65058ea2e83550ec6b29"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.6.mlp.gate_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 614400,
+      "sha256": "3e27120fa52002490378c6a6142f9bdc72b58fb5743092b0d1897b6757f2daf0"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.6.mlp.up_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 614400,
+      "sha256": "bba07a881924cfc9050518e19e55c223657067b7946ae2aa0b1ee1dcab44fe5a"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.6.mlp.down_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 614400,
+      "sha256": "34ddf742ba8465d6ae29b3cb8120fd1408301de57b9dc28d92297826a8b42547"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.6.input_layernorm.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 480,
+      "sha256": "6455c0dfdea9fcc7327c60fdb1d1540f6b862193dd1598ba83978caadea603b9"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.6.post_attention_layernorm.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 480,
+      "sha256": "6455c0dfdea9fcc7327c60fdb1d1540f6b862193dd1598ba83978caadea603b9"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.7.self_attn.q_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 460800,
+      "sha256": "5b038250bf1b1994371d48cf0e252253cdf89a9a7529e2f04972698c7d153d65"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.7.self_attn.k_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 102400,
+      "sha256": "da020c7043c623f48db35574381b78f9983175711759e687ae0f59c90d0a2ae7"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.7.self_attn.v_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 102400,
+      "sha256": "e8aae29b924909030ddd09ab3a1fbee2ba2966bd73c84448ea636d5de3bb9974"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.7.self_attn.o_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 460800,
+      "sha256": "594391cdab385c1730cc9f44a588dd9195cb41a9c1cfe0063985237f16c52c45"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.7.mlp.gate_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 614400,
+      "sha256": "c2213bcd90224d0bc4bed1c588d40399d9a6f778cb52b645459508923adab2f3"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.7.mlp.up_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 614400,
+      "sha256": "bf1ec95db95a2979a278ef22c1349540da9bfd653dbf0eb7fb50a9ee7631744c"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.7.mlp.down_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 614400,
+      "sha256": "c4ceb9ae1d25789ef85517db6932b85b96cfd35f41678bd83d713688c830c08a"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.7.input_layernorm.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 480,
+      "sha256": "6455c0dfdea9fcc7327c60fdb1d1540f6b862193dd1598ba83978caadea603b9"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.7.post_attention_layernorm.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 480,
+      "sha256": "6455c0dfdea9fcc7327c60fdb1d1540f6b862193dd1598ba83978caadea603b9"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.8.self_attn.q_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 460800,
+      "sha256": "0a89d9568163b8d99a0f8a765a441ec154abeda03ef8be8a9830afb50ba71265"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.8.self_attn.k_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 153600,
+      "sha256": "845e5a21d46926d4e35d94ba52b54b20e2921f8d50e314a2ec20d1652b23299d"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.8.self_attn.v_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 153600,
+      "sha256": "e4268aa058151022256ae6b45c661a7293fb2cb373741ec7f516065ccdf60f53"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.8.self_attn.o_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 460800,
+      "sha256": "a4dda70f0d3e97d43a1131bd9fcdbcbfc81b27bffe1dc4a0664a8a49c3f2ea6e"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.8.mlp.gate_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 614400,
+      "sha256": "8f02d70652f28706963e543b379b9e4481b547fbbf8c1dc49118078934669523"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.8.mlp.up_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 614400,
+      "sha256": "7c7f2e26c24b477eca876fddac7f7319b266f30d1603725fff037341a520d743"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.8.mlp.down_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 614400,
+      "sha256": "fe39dad04fd2f941b8e5677a3ebd7ceede743f9e1be76d5fd27d90e08970f2b5"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.8.input_layernorm.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 480,
+      "sha256": "6455c0dfdea9fcc7327c60fdb1d1540f6b862193dd1598ba83978caadea603b9"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.8.post_attention_layernorm.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 480,
+      "sha256": "6455c0dfdea9fcc7327c60fdb1d1540f6b862193dd1598ba83978caadea603b9"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.9.self_attn.q_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 460800,
+      "sha256": "89c1d42599397ee261a62b3db730317fc960aabc4014466d90fa952555eed4a9"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.9.self_attn.k_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 102400,
+      "sha256": "be93b96f1e165ad1b7cf11c040ad25aff17246b26e060894bdf7828b75d3bd3e"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.9.self_attn.v_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 102400,
+      "sha256": "6328b63f5c2d767c1da5e3e8fd390327e73efdc0b3d2da561f5c439103f14de3"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.9.self_attn.o_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 460800,
+      "sha256": "5411a3c55bf173214c347581b19465a6528618aef168c4bf7fc3e28fc118d9a0"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.9.mlp.gate_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 614400,
+      "sha256": "c8d39bc211fa84d1795ad0deb45e66f937c1a597006275eb6264b44537a160f1"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.9.mlp.up_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 614400,
+      "sha256": "ac5a9120b03da74567f254407463ca1914eae54a0d79218c8d2c5c103f5ab9b4"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.9.mlp.down_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 614400,
+      "sha256": "f6cb2473fa48b902d56cea00c5e5d69357719ca582bbca9fd65debdf9f234cba"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.9.input_layernorm.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 480,
+      "sha256": "6455c0dfdea9fcc7327c60fdb1d1540f6b862193dd1598ba83978caadea603b9"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.9.post_attention_layernorm.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 480,
+      "sha256": "6455c0dfdea9fcc7327c60fdb1d1540f6b862193dd1598ba83978caadea603b9"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.10.self_attn.q_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 460800,
+      "sha256": "9fa3c7e83e8e1d6ff29ece6d139f0ab99f3e14e7b1950537c44e6b6d2ded017a"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.10.self_attn.k_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 153600,
+      "sha256": "8d3131330ee2565e907c0c0c775efc12a2cfe1ae2a29ea063c60a4a6df1c6469"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.10.self_attn.v_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 153600,
+      "sha256": "c7a4278b1329df14da593e38ebfeca7679ca4635ab4e07a275488c38c6870196"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.10.self_attn.o_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 460800,
+      "sha256": "5ede5eced34cf8dc7ebb605b092df716bd0306dfb501f4f6c42c7063f0932037"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.10.mlp.gate_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 614400,
+      "sha256": "09843bca7920c42410d9a4d9d15240779a6ff89e26ef93ed47381a7fff95542e"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.10.mlp.up_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 614400,
+      "sha256": "39a49ee9c61285f7ce136e57e133424183749c6de4d750cd849a629f9130d7af"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.10.mlp.down_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 614400,
+      "sha256": "ff34ee7ee79e30bd66cb8f8da3624e188c0deed546f84e72b16f02ad34a52671"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.10.input_layernorm.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 480,
+      "sha256": "6455c0dfdea9fcc7327c60fdb1d1540f6b862193dd1598ba83978caadea603b9"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.10.post_attention_layernorm.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 480,
+      "sha256": "6455c0dfdea9fcc7327c60fdb1d1540f6b862193dd1598ba83978caadea603b9"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.11.self_attn.q_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 460800,
+      "sha256": "e98f24e4ead9d45f2e6147fdfba707b5e7d8373e93190202da0d5a170cecb48f"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.11.self_attn.k_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 102400,
+      "sha256": "ff8900338943ba98da1353b3eb24a15bd3fdcda7bbad4d6c26a24ec4f4bd86e6"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.11.self_attn.v_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 102400,
+      "sha256": "fd208b80d8fb4f5e31e2329e67302e0b6db3817234998b3c9cabd67885cf0e46"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.11.self_attn.o_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 460800,
+      "sha256": "fab56469d92cd9e99b0c1dc691460ec8bd3ebdcb1ff6457eb8def6869fd8fa55"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.11.mlp.gate_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 614400,
+      "sha256": "7d92a3dff17d2aaf6f9cc8a44dbfb648cbdfc1c1b2496f99db7f6ebb322f86eb"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.11.mlp.up_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 614400,
+      "sha256": "5cf4077769fef9dbd49ff128442bfcd71760520c4dd2ffca758c884d0d8bf914"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.11.mlp.down_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 614400,
+      "sha256": "b504d5f7f0cf9413ec147779f72022f87672586b17b8f131710096b7cb8db749"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.11.input_layernorm.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 480,
+      "sha256": "6455c0dfdea9fcc7327c60fdb1d1540f6b862193dd1598ba83978caadea603b9"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.11.post_attention_layernorm.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 480,
+      "sha256": "6455c0dfdea9fcc7327c60fdb1d1540f6b862193dd1598ba83978caadea603b9"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.12.self_attn.q_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 460800,
+      "sha256": "b055f7b0b0f5e577aae2d29cc5d2615db1a20988b7c06c95e85d1c15569da8af"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.12.self_attn.k_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 153600,
+      "sha256": "782994ac187e6b51e55e8e96a6503a923db7ff81dfd65bb2206b98ea607412c7"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.12.self_attn.v_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 153600,
+      "sha256": "a018406e5d1d2b9916b2fa73dc00582564e74706c84bb5fc68210b22742a660a"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.12.self_attn.o_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 460800,
+      "sha256": "134b87aae9a181af5d9ee57579a8c511956285453e3cfac9e6439835756a3eef"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.12.mlp.gate_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 614400,
+      "sha256": "cf174908c9bf8c9e41615e5821f8870d64b2da54b6a5e3f3b59c015c18ac6f1f"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.12.mlp.up_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 614400,
+      "sha256": "832f9da596e0b2154bc5e188164107272551b8bd291e3ede679dd9997bb0d44a"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.12.mlp.down_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 614400,
+      "sha256": "9430f7f209130205ab4450c3d0db49a4d05c60990f7ace2e5af23f5986b16832"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.12.input_layernorm.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 480,
+      "sha256": "6455c0dfdea9fcc7327c60fdb1d1540f6b862193dd1598ba83978caadea603b9"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.12.post_attention_layernorm.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 480,
+      "sha256": "6455c0dfdea9fcc7327c60fdb1d1540f6b862193dd1598ba83978caadea603b9"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.13.self_attn.q_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 460800,
+      "sha256": "3764eacd4d9f3df9edfcae9f4024ea1f56a699d754fbc63effe2b8ce44a48ae2"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.13.self_attn.k_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 102400,
+      "sha256": "e37d84cd94cdfcf8f3cabec28d58862cf80f2d571f3b64afda28720c0c9f3ce7"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.13.self_attn.v_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 102400,
+      "sha256": "6c1388658a45573556023ec601d424ad347ef28e804fafc4c05b5a89c277f196"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.13.self_attn.o_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 460800,
+      "sha256": "71721bb6505feec8405280beb7a6ead2fb343f9d769c5c608ff6ff8e44df98f5"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.13.mlp.gate_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 614400,
+      "sha256": "65b3986b4a2d089540f806791a70ec86b2fd464b56d80b8e9f753864556a8ce0"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.13.mlp.up_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 614400,
+      "sha256": "9fcf17ec245b74da78e66ea6843a47f9019a4a89af053a9c8c30590d13c010a0"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.13.mlp.down_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 614400,
+      "sha256": "1da85628ff26e445954614a652f698285f3a1287d0e497c7ff64510116a3eff8"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.13.input_layernorm.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 480,
+      "sha256": "6455c0dfdea9fcc7327c60fdb1d1540f6b862193dd1598ba83978caadea603b9"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.13.post_attention_layernorm.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 480,
+      "sha256": "6455c0dfdea9fcc7327c60fdb1d1540f6b862193dd1598ba83978caadea603b9"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.14.self_attn.q_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 460800,
+      "sha256": "dff9780a84c97188e19ce51f4a30c563f962e9a1d45c62e5671a41e83df0fdb5"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.14.self_attn.k_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 153600,
+      "sha256": "0c2addd7dfbcf174bd0e76b0b5c19b521c6eac04192616d4ae7818132427a25b"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.14.self_attn.v_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 153600,
+      "sha256": "61c60767f507e8cbaa1adb688a197c86a2e84ea945116cd7aec83c3f8ad2c51d"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.14.self_attn.o_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 460800,
+      "sha256": "f64ee61c8605423e3e414e16be5debd79261ab135e128eedc9f098a320177761"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.14.mlp.gate_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 614400,
+      "sha256": "bf6bf99754d2d569500a28938a406924a217e904db096b384e0c9fa79b16ae19"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.14.mlp.up_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 614400,
+      "sha256": "f6b4afde442473dbf0339089626b8d253d6d51a9c244ff55c6e0ff1cbbf57edc"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.14.mlp.down_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 614400,
+      "sha256": "7006d7933b1a6c989175cb8d177338e5d4d414f7464717a734bb87ebcba5eed9"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.14.input_layernorm.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 480,
+      "sha256": "6455c0dfdea9fcc7327c60fdb1d1540f6b862193dd1598ba83978caadea603b9"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.14.post_attention_layernorm.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 480,
+      "sha256": "6455c0dfdea9fcc7327c60fdb1d1540f6b862193dd1598ba83978caadea603b9"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.15.self_attn.q_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 460800,
+      "sha256": "c8c11527a0aceedf9b8aba702941ff0fc3f67961c9163e394a2a1b7e2d68e8ad"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.15.self_attn.k_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 102400,
+      "sha256": "fa73dbc7bbac8b0e3dca5aa54768ff834f73d3031ffff2f0bcb858fdf287159a"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.15.self_attn.v_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 102400,
+      "sha256": "84e5b97bfb309f301f279fc5e66825cf2b4684740160148ff0aa7f4b5e2c9132"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.15.self_attn.o_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 460800,
+      "sha256": "635914d1714bfa50810484d96f5baf28bf458c109e1fc010c68d93d7d38fa787"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.15.mlp.gate_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 614400,
+      "sha256": "efc3d48c01557624da4ef68da536b5ec2ffccb38e43fa25860f9d26770904b26"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.15.mlp.up_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 614400,
+      "sha256": "e913bafe67c3e13136bd75982a82858f8eb8557592581cf8318ec6905c091c94"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.15.mlp.down_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 614400,
+      "sha256": "41de0dc41d56a798f73b85edc6637e9dddd90c1cb7acf68d27fde4e331f198bf"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.15.input_layernorm.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 480,
+      "sha256": "6455c0dfdea9fcc7327c60fdb1d1540f6b862193dd1598ba83978caadea603b9"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.layers.15.post_attention_layernorm.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 480,
+      "sha256": "6455c0dfdea9fcc7327c60fdb1d1540f6b862193dd1598ba83978caadea603b9"
+    },
+    {
+      "name": "model.vlm_with_expert.lm_expert.norm.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 480,
+      "sha256": "6455c0dfdea9fcc7327c60fdb1d1540f6b862193dd1598ba83978caadea603b9"
+    },
+    {
+      "name": "model.state_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 30720,
+      "sha256": "59fe0012669eb31181eb5c363d91ff5a8c57ab457ad242ce53959d83a8d6d58c"
+    },
+    {
+      "name": "model.state_proj.bias",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 960,
+      "sha256": "d5503163682e0f561cac2e1774bd32cfd9e777fe3c23a2bebda34caa2463005a"
+    },
+    {
+      "name": "model.action_in_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 15360,
+      "sha256": "c120e18e5084de3398886f69d989f28f6bfc3528dd6b11ad7cc000adc755fead"
+    },
+    {
+      "name": "model.action_in_proj.bias",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 480,
+      "sha256": "2d22d14b4b7365dbdbb36e12db81772d23ceda88f8e386bd9bcf4a0fcde48e0d"
+    },
+    {
+      "name": "model.action_out_proj.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 15360,
+      "sha256": "90f1827134e1ecef12e45775610197368ba8fbbc71d737518277b18f8b01819a"
+    },
+    {
+      "name": "model.action_out_proj.bias",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 32,
+      "sha256": "4b015a544486730a60b089c4c5bee588ec116af8d022b121b5619bec26916c03"
+    },
+    {
+      "name": "model.action_time_mlp_in.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 460800,
+      "sha256": "c217fabf467083e5c22120477f7c03b60bc1953c0ded0c1ba2f69a919359a7c6"
+    },
+    {
+      "name": "model.action_time_mlp_in.bias",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 480,
+      "sha256": "fdcb839071e70ca992ea6a2a774fb5bb643df3d5f3a622daa9d193d48eaa7ee0"
+    },
+    {
+      "name": "model.action_time_mlp_out.weight",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 230400,
+      "sha256": "534f7994834aef21e313b026b94a81311179019d860894f485b7c9bc271793aa"
+    },
+    {
+      "name": "model.action_time_mlp_out.bias",
+      "group": "expert_projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 480,
+      "sha256": "bff9aa9a0d1013b27edf9394e2ae51098f084211732dd6ceecbfa6298a1a2b7c"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.embeddings.patch_embedding.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 589824,
+      "sha256": "bdeb3f250f2f359e554651283c1990975c190613517e43516dbbd16c5acfcfb4"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.embeddings.patch_embedding.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "2785b3e450614c672c4cbf28115ccafa521c2026e20ea2ff5fc6e3873b132bd7"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.embeddings.position_embedding.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 196608,
+      "sha256": "8dda9027a009390061ddbd705d202775fc28f26def24e71eb0ee55bb95f8721a"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.0.layer_norm1.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "8daccf36c6d61d930a6218bdd777c78771e0909e8f38fa378bc09bb615d5210e"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.0.layer_norm1.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "a196e972603bae9c4f0307c6e4ad208ca4da56952888d27817b34fa8874a9ffe"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.0.self_attn.k_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 589824,
+      "sha256": "e4af06cdd76a6b70161df3f91792ffc7f0ed44e69e6db54737bad70a6b327700"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.0.self_attn.k_proj.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "3bb09eb8e2d7a6cfa4da5a4b3768e9d0bdda1537572ba3d27ee29b5026a19f40"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.0.self_attn.v_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 589824,
+      "sha256": "ab3c0e0eef9b9f5d2dfe87213aacec9a07458c877fca4a92bf1904f97fe61e75"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.0.self_attn.v_proj.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "509da06f6d20778d606f83bc0f12fe0e0cb91bcb83740e04bc1641d7fbacf956"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.0.self_attn.q_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 589824,
+      "sha256": "492f3268fa9194c676fd0dd4aae06d7f3127c9889b848ce4da31e9a583b2d0c9"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.0.self_attn.q_proj.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "af91ed2cc93803cbc2ca5f0ac26a5ec738d08dccf821b26da91a03117ba4b2df"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.0.self_attn.out_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 589824,
+      "sha256": "52ac4637dd99de2982a079ef45e87b59f37f8171e9a491e2332a068f749ce42b"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.0.self_attn.out_proj.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "2b173aa2da338bcfd0d314dcd8dda35293f06a4876b8ef6ad60daec54e560b29"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.0.layer_norm2.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "5f5f213b84a1102e0af3482da51cf79882a3ea6adbbd6abc985b97e381f3ba0b"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.0.layer_norm2.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "4c7523393109246b3b328230a28ec63c64130645b329f50810fddd721db34597"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.0.mlp.fc1.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 2359296,
+      "sha256": "110eac7f15bc81aa4f5e383f124e9948b8703df1ee6a033f2d6787559b9cc7cf"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.0.mlp.fc1.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 3072,
+      "sha256": "8ee58207d471ae7f4b6eaddf4ba94ef0157d1e61574537b933e22b6b85d15c70"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.0.mlp.fc2.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 2359296,
+      "sha256": "a85478588b80931c2448d1a86b3f94582dc53bb547e8173b310c3c6a1c5c82e0"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.0.mlp.fc2.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "4f363f71925d91f78ddc2b6884c2c34ef04b5407e2480fe077d90688d3744232"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.1.layer_norm1.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "d2f7c64ea90f25da8a41096ecb03f2eb8379f55b84e7ba36b8d8d4493c19fe6b"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.1.layer_norm1.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "3b883d8cbbf8df2e134b160e4f0ebabb96d15db7e9f315ffa02e1de59d7652b1"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.1.self_attn.k_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 589824,
+      "sha256": "77049982508dddfa7fa6a4c2151b0ac483c348f37301f30c5ee935e3160fc699"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.1.self_attn.k_proj.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "55e702efd9ac282ee824ea65627c2fb1af65a6eb5dd0b3522c40e1ab29b232b8"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.1.self_attn.v_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 589824,
+      "sha256": "a7d10e629282b60c1e85d949a24e505669c0bba31c71d3600ebb249dc7e264f0"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.1.self_attn.v_proj.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "7e0aeb387edefec1c7a1d6c8de5ac561a21cd5a9a20ef277f5882b520612e71b"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.1.self_attn.q_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 589824,
+      "sha256": "75378db7b9ba7520c72431965adddedd19a2279602a9e58fdd9c03b821613224"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.1.self_attn.q_proj.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "9574d8b5467366df1ffe005c87893391e72e6555941b2e1f663a7258a5b205c9"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.1.self_attn.out_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 589824,
+      "sha256": "8491b3c1e8a6e49742ca9c6881eaf7733a53e57c937f4d30caa91bce06d442e9"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.1.self_attn.out_proj.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "bfe27b06623f71c01ab44ee5f60ab95b33eba0de855b55be9ca76f0b58685731"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.1.layer_norm2.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "7ee5b63701c8d37176dd4c117f2913f1de63a0a534263f81a159a07f1bec5f11"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.1.layer_norm2.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "b313a7e7ef327748b3709b7612dc1a6ea4483ef5475e22150da4fd73fcaa004a"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.1.mlp.fc1.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 2359296,
+      "sha256": "107c1ea7c6bc5423253a59350fe9d63480b0908ffd371d690d995da50b7dd3a9"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.1.mlp.fc1.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 3072,
+      "sha256": "8bbb0afc68677eeb7c5b758d4630bf28ca2fb670eebe361988fda9e1172242e0"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.1.mlp.fc2.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 2359296,
+      "sha256": "286e4b6f346f248cd573db33c8856145c635029828bc23b4cebc32730d013a7d"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.1.mlp.fc2.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "5c4e5140fb284648850bcca1aa236caca241bb94d80eb2ba079bbeff5f740d8c"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.2.layer_norm1.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "b08f36d77b6bb7daf0ac192a7f7cb601c612d5ffe226c0f75849655fdbd017f4"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.2.layer_norm1.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "8478b78ae2e5a7a19037669174bdc00ecc77182d8a63d5ba27b992da383a5456"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.2.self_attn.k_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 589824,
+      "sha256": "2498faed8ded567be8373cf3e6f50badbcd85171a2a785c47713db0d2f8877d1"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.2.self_attn.k_proj.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "f452b29987227baa414d4fc2c2f69c52cc2390add6bea0d7b55c2f710688e5db"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.2.self_attn.v_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 589824,
+      "sha256": "1114516c18f3e586c471a1b23ea9c03529082f29c2533a36f217e91271f7b6f6"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.2.self_attn.v_proj.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "f2f621b3aff8ca74a83cc0c45a642e621cd856edc7b99086c722a5f0fcd387f3"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.2.self_attn.q_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 589824,
+      "sha256": "aa7ce3481f8fd9dd559483e3f73bfa720d81ab3ef4ab60e238682ac4b1d583f1"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.2.self_attn.q_proj.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "1fccae17b7a007a3260f9391fbc6b9c02b5b6f434d60e508b8d6f0dccdafff5c"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.2.self_attn.out_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 589824,
+      "sha256": "4cc4cc84387c84010e1cf7950c2651b72214dcff0b6269330e225eeb61ba5e01"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.2.self_attn.out_proj.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "86791e8716bcf98c10f91431c1c350dc2ad3c8e3e058f9cf0f9f87e893b45703"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.2.layer_norm2.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "86fd4e0b0a0f68028cece43c2a2b4bea8c788417edd584cb5484f2ece114db20"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.2.layer_norm2.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "ca4a3839ab7ddb24a81f7b3ffa3d4752afcd9a4b20ed745cf11a8ae9559ba4b1"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.2.mlp.fc1.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 2359296,
+      "sha256": "e5caa42dc658bf60b1a19aeb2d4b63e2379396d8ba3e59c62878c73362c1f1bf"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.2.mlp.fc1.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 3072,
+      "sha256": "72d7b49d8994b6b036597585d8edb900fcc37edb56c063de09a72d7303380979"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.2.mlp.fc2.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 2359296,
+      "sha256": "a3ff142018d13c31851d7fc1715b9a4d7e6fc8ade3501b1c7c751c8e036e92b0"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.2.mlp.fc2.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "21ceb8ef0040774764c6bcfe34b7a3422a938d47f6df964f80784df9548e81f8"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.3.layer_norm1.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "fed6b98dd39d2adfb37c08e1200b478dc2b3fec53d1f9c0ebe4906d33b9aa332"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.3.layer_norm1.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "53432d0b458e694f07151cc247ac569f28ae61327ef88d015efaba79a6bcbbd8"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.3.self_attn.k_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 589824,
+      "sha256": "9b4feccf8a678139a107300208183ac03995f611fd6ed146792ad08b83855f78"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.3.self_attn.k_proj.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "542bc54840938f84baf37cae4ad764d025b3bf474fb0b7304e2fa1b41f0eee9c"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.3.self_attn.v_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 589824,
+      "sha256": "22f119e78cb0f5187e13d0bdf18beb62b8d14744d5235cf34579766a10bb6a03"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.3.self_attn.v_proj.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "db70f98591022dff7c882b236034ecf6618a9f472118ebb91cdb2cbeb2226d82"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.3.self_attn.q_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 589824,
+      "sha256": "e19ad1446f17c97c60963f42f82a4528dcd9d48ec88c5caf4bc2754b63485954"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.3.self_attn.q_proj.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "094f86cd4aa13a47b67d82a8694ce31eb9e822b762196a12ed8fca9229ef62e2"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.3.self_attn.out_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 589824,
+      "sha256": "4518e0c1787b892fe80a95434f3fca9c281444b92e99b4dc2297133a77345181"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.3.self_attn.out_proj.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "a6bef9adc47d576130fb77f0618038af31940d0dfdab8b9177cc2fc04f64f76d"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.3.layer_norm2.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "cfab9d5d0e63238ab7c263c597499674c3ff9e1af61da9b049efb2f7276ac336"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.3.layer_norm2.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "965ed1644afb0338ba02cb906321c936adb13c33e5a5932b3f7d3b9a3260db8c"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.3.mlp.fc1.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 2359296,
+      "sha256": "98aa34a6fbf556c143729ad73b8fc7eda813975fe88df1833f06e994a0303123"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.3.mlp.fc1.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 3072,
+      "sha256": "1c2cede414cd16baaeb318e074e6926774986939fd31438494d8d090baece195"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.3.mlp.fc2.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 2359296,
+      "sha256": "c6042b93148cedadb4fe886bd5fa36a9516b5a512a57f5b0ee8dc6b148b9e964"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.3.mlp.fc2.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "14b303b22cc3f2b4d8180009f71724fe155febc4713e721bab645c97977c0cec"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.4.layer_norm1.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "d5a4931775fc778c6cd35bf16092dae14aaaf4984604e449798644c76419d0b2"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.4.layer_norm1.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "cc0508376a7aa477765e192654f50aa7b5e9de34704ffb4963997114e935fbf5"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.4.self_attn.k_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 589824,
+      "sha256": "465cfa1560056467d2c005e5d513a1c69bc4e20150accbe8ca2906e7a7fe9005"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.4.self_attn.k_proj.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "d470b5a94be04cc2ea3922d8c60a1d9540b0e8b05d7e8df993f96a630bd4191e"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.4.self_attn.v_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 589824,
+      "sha256": "7977bff338e536ef8bef936d5729f552ae47cb106aeeb82cdf9304058e58f4f1"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.4.self_attn.v_proj.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "7ce7ba4eb9ac0b971b2c62f59b605525afc878ffd65388a28bc421bce7571eb0"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.4.self_attn.q_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 589824,
+      "sha256": "fe203ac40d5d19b8c16ab541c8a6b733949edbb9cd6dc4885c5c555e73f3ea57"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.4.self_attn.q_proj.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "776e6d47f3dea12eb53e53c14ddf3161083ef743198249ca9211c4645b0f8261"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.4.self_attn.out_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 589824,
+      "sha256": "c47df0999abd12dea1b602b438073798cd9dd6a9c2a7366af8788eecc89b3825"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.4.self_attn.out_proj.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "f759e4959f329bd6ad11d8d4b7da8d18b81b70af5aacd62a70ba74716c9b41a0"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.4.layer_norm2.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "aac4912ea6fabf5e989040180539d67c7817eefaee45354638277e8ea0624351"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.4.layer_norm2.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "b08c514fb7ba906fd9a5e43e91122c9f2c21e30ad076dd67990818baf63fc00b"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.4.mlp.fc1.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 2359296,
+      "sha256": "eb5cb4d0befe3fb336b951a102776f1c348ee4677f1357aa20ad7175ce439f55"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.4.mlp.fc1.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 3072,
+      "sha256": "4e64d4f143aef931bca0b0d24218db892680b8fd6fbc75024dd43e827acf955a"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.4.mlp.fc2.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 2359296,
+      "sha256": "c826339848d63c4d8cc0c68122509e3849009e2715268b1a98e2e17d3a932077"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.4.mlp.fc2.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "53054e37462df1a06e645eed2d37ea27593a3c69516fdcd2730bcbd4cedfc648"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.5.layer_norm1.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "743e02556617d76e5e25f1c710aa14c202a0fa5394725e6608d08d22885e5354"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.5.layer_norm1.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "508d0d0357f878ef32b902138775ad5e6bfa21072c203507b6c2aa84cd91db27"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.5.self_attn.k_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 589824,
+      "sha256": "0c2f67c6338b4d0c4f074b8b871a9f5cd7ad9b4a75113469e10b1b08bae6d4e6"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.5.self_attn.k_proj.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "d8f5a7f1939aee9a97100c6db922e196c19d35b33824dbdb3a2b667a8299c19a"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.5.self_attn.v_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 589824,
+      "sha256": "f793dce5543ff1d809d42757c6585bb12e8f5a35fc41af2dfe3edaaef4ede82b"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.5.self_attn.v_proj.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "7a7311b5be36ec8a6edb3bb5433658ac79df261744aeddf80892e8f945d18600"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.5.self_attn.q_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 589824,
+      "sha256": "fc19f9011bfa8a9ea27bdb8e090e609ddb45c899865f9c95538a9558c2ff7a1f"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.5.self_attn.q_proj.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "becb97913394afc483526dc2193be6319a5f5c496697ecbeb0ea271a4773258b"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.5.self_attn.out_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 589824,
+      "sha256": "67441c1505f4bc993048d99dcab4328e9c82c79ac6497d83cebca603816f87d0"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.5.self_attn.out_proj.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "64711709d36783acf8e36563a0d4b7a8e7a3b9fb5b2550ca6e25b5d1c9948342"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.5.layer_norm2.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "dbc12b11a64c1ac5627fa9d077a417be4ec4958a3406cac693d77ce72dc068e7"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.5.layer_norm2.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "05b4f3b93ce0bf65a7ce0b6d95e8f9c5d0e9a8342443da8e2328e13c23b2c2d0"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.5.mlp.fc1.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 2359296,
+      "sha256": "67755eb358e4f583403af3797d0f2f6bff3c5b970aae96ccca3137925bcf3c3b"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.5.mlp.fc1.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 3072,
+      "sha256": "2cc0a555fc8d1e46185b469e297a916c7e37fbb8bdd15d22f74448a248f2bf68"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.5.mlp.fc2.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 2359296,
+      "sha256": "13d28d06cea4205760b003335ff490fb30527b5366169d24bca8b708230a4cb8"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.5.mlp.fc2.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "9f0215ace1321e7db3451b06c0aa56ff3515026102ca49d7d7a04ba5cfde86da"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.6.layer_norm1.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "8b7fb040bcfb7b23f19ce3af27dbde32663ec49776771ca140eed31bb8c9b363"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.6.layer_norm1.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "4e27465151f5b33fc752239e3c255ea04e2cb00b30aabfa1da51ff1ca1a66839"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.6.self_attn.k_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 589824,
+      "sha256": "5f043267add78ddce2f5a25579c5d77a79c96f62893af0de4b503318662b4dc0"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.6.self_attn.k_proj.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "729165c498493c6c65da1ea92834dd7ddd80eeb090aa10725506a248d206be15"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.6.self_attn.v_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 589824,
+      "sha256": "83789ee8071cca5f0baaf031178e6edfb650bbf589176b8a7be3b7baa0a25fa5"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.6.self_attn.v_proj.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "fe4e05878eade116c73451c461e6e82732e422a6f0c52571e1ddb60940648245"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.6.self_attn.q_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 589824,
+      "sha256": "ca141909e22a0174afab61a0bc9cc2ec1faba2801e798ac59312f34aac4cf32a"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.6.self_attn.q_proj.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "deefe6ef80591fd8636048303fca00b29a9bca40922a89190f16ab2872da6ea3"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.6.self_attn.out_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 589824,
+      "sha256": "36ffff7bb278c06ec9377a90a159ca6de6a56cf2e1de8ccf6fad10a5c1153b24"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.6.self_attn.out_proj.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "d44fbb1573b5e3633d593607caa025987d0e19c53084af6e65d2b2c253071d00"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.6.layer_norm2.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "9ffde89f26f3de667e0eebbd908fb05050a82c04a92feb5a5a8482cd1c018de1"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.6.layer_norm2.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "512092cd6c903c173fcffd608d01606f92a87978ae5137c82ddd7ebeadcbf6ac"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.6.mlp.fc1.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 2359296,
+      "sha256": "997de7f8107f544a605f341c1ade6ddf44fd70c5a8af9598fb3faeb82eab082b"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.6.mlp.fc1.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 3072,
+      "sha256": "66f54390724ee1a48b7e77b14b8ac7e6a59b0cd2d5ce4a33f786f601c39c163f"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.6.mlp.fc2.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 2359296,
+      "sha256": "f49cebc910bbd537e602f3aa7e202470aa7048b1f5f044ca4172e1a1d97bd393"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.6.mlp.fc2.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "3560f091ec9ee39b2c4aed4530c59c946907bce1d7e9ee30f729b0cd07865276"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.7.layer_norm1.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "8cffc72a5e4f05e3175afcdf3377cc3d760b0829b16ba658ec5c7969a48daaec"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.7.layer_norm1.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "70c99501a25d7f506356e555ed61f1114c5af07ed28833ada5ebcb8f0de38c66"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.7.self_attn.k_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 589824,
+      "sha256": "cdd29cde7a906ade74f067ffded341d7e942617e6eca39b95c75350a8de74ea5"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.7.self_attn.k_proj.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "e326b7b84c8a61ef4a399b0f0376a0da6fe851561c58b5dbc82584954c955196"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.7.self_attn.v_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 589824,
+      "sha256": "d686d45b5ff9094526cf8bfd0870c3f8c7b1703a6c1961c05439a515d685bf26"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.7.self_attn.v_proj.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "5571bd046138bbde578d3ed5c58e9389485ea5b47d2f4cf54cae8e59f3a8044c"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.7.self_attn.q_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 589824,
+      "sha256": "5796e80d1be78c5406cc50603315570392415bcf769064f8604794ed3f6c82e4"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.7.self_attn.q_proj.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "89d7b8ed9426fc61a7f733e16df0842a9577e1048a5210b2d755b11f54617e67"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.7.self_attn.out_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 589824,
+      "sha256": "ff6624ec2bc3bdc3357502e4c40a1e0981e81734ec7c21c487adc0d7448c4df9"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.7.self_attn.out_proj.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "cc38c4f105b9218121b79a99e01b308cd7594d623cd49b51575200aad45149fb"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.7.layer_norm2.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "6884f9b4ee572d118a456f3fa6cd68b1085b39b717857fe5b5294a7f6920fdaf"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.7.layer_norm2.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "4cf8044e3a9f092f766c2391f14853f6ad5f5d2f8e7674f55dee74255ae07d85"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.7.mlp.fc1.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 2359296,
+      "sha256": "4bc41cdb928341026c2b095ddfa5cbac8a799562a5bc55d5fdfbb885eb41bccb"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.7.mlp.fc1.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 3072,
+      "sha256": "e9476b6ed2a10687546bc1b61aebb0b37536f59903750157e370d4fe74430b91"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.7.mlp.fc2.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 2359296,
+      "sha256": "2a7c7602a1dbf4055cb525127e16e976be01d4c740ce4b38b992fa15301ca264"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.7.mlp.fc2.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "149e900cdc5b7eb65590170cc2ee3c9802fc6f23658064141fee8fce9d4fa2a6"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.8.layer_norm1.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "31ac473432d966fb58672047c00226fab8f6979c0c285897397e716c822733a2"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.8.layer_norm1.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "1b259dd73a38ac26e219efb0f79b072f8aeb84ed9de711411fa7ed661eca6ff3"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.8.self_attn.k_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 589824,
+      "sha256": "fc9a30f791d1ddf94e552e58fe74cc28d736827137f2a7f8690276e520505719"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.8.self_attn.k_proj.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "65eff623f05026d212a07033bb28d6d32b710f02b3adb53702c0ec60318f1f51"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.8.self_attn.v_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 589824,
+      "sha256": "18eb5e829a695556d20db9aa8467f2f67abad4d088a3c4c6e2372a3c31ff7d02"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.8.self_attn.v_proj.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "9538a5b624b060d844e08c72eb9bcba55739dd7530e19f20b8e09826c380da0b"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.8.self_attn.q_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 589824,
+      "sha256": "8835c17e276467fe0f6c8c03b17b75206695650084c3e27e75a8f8a6b71be706"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.8.self_attn.q_proj.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "cd973124d7b85b508df06857ea1f371499cecc7ff7afd781154ca8e599fa2e98"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.8.self_attn.out_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 589824,
+      "sha256": "973d3d627d2f7424100f87b144ec647d73d7e3cd97357dcf0fe0f630bf023141"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.8.self_attn.out_proj.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "6426297f75c3ae1b8c9e4af07a7f2dacac7ff6dad984e8e2ca47693efe755326"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.8.layer_norm2.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "a08b34cac2ca3f307cb2391b791e23a3e4a702719010fd7bdbe468506730cb88"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.8.layer_norm2.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "f114acf1ebabedade204789df6b3f03dba96b5b172232cd25c31c53c6d87605a"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.8.mlp.fc1.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 2359296,
+      "sha256": "14e9d97fbbb41c3c77710c9571085b5767c242c0cd73778b812e0ef27b253352"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.8.mlp.fc1.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 3072,
+      "sha256": "91d081d57fbc641385a9ba41a80e550a2aa589f36eb11794c1bdd2edf9ecc9dd"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.8.mlp.fc2.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 2359296,
+      "sha256": "5e31698b763889a21a4c6aee3459990abbc7813793d785181e0d5ebe61dcd6f7"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.8.mlp.fc2.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "af1ae28cf88bd6d7be550e40f604d4d94386251bb7360086309e33b12ea678bf"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.9.layer_norm1.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "0ea23e0b4b34cfdb013f2cce28aff3239d9c8bf9d03736c68f5b6927963b9b05"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.9.layer_norm1.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "98a11f1318ce8d48765a52464b375ff26d7e44a6b05a13334937afec08d94fd4"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.9.self_attn.k_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 589824,
+      "sha256": "3e8bc5f7dc16f45a5dd90639425fb6f56cbf98a5862da2497c38d0818d1ef828"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.9.self_attn.k_proj.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "b81d088938f67491bfd6418e0c638f159789943cb95f3513434499be3baf6d50"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.9.self_attn.v_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 589824,
+      "sha256": "889d31700fbb9e8de394972523cbec8889f7ead2eef5ee8b12e758e67ff3b264"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.9.self_attn.v_proj.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "9d03b3cecda316a45ba852ecda04dcd3bdcb1257aafb898b36d2ff01b7ff5427"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.9.self_attn.q_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 589824,
+      "sha256": "e11cdda16371337286c3b70ae71dcf14449f3ed77395346a002d6225cea5ed70"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.9.self_attn.q_proj.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "a0d9bb178a50580e5faeca8d148b471b7cc67a4192a23e34d70a63d0a68e4554"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.9.self_attn.out_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 589824,
+      "sha256": "d1fd703b88a73154ee65d0a323b5c710430a38f658f08e0ed527e52bf5162b35"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.9.self_attn.out_proj.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "fefff7d7c1d531cacff11f840005038562302189961f9a40e183487656e3fb16"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.9.layer_norm2.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "1fe55abd7a4038530613545bcdd56f352f7ba83f662c0de2f0640fbfe627f943"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.9.layer_norm2.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "962e34fd63f84d8ee07820d9dd720424a788510620d0143393fa18c8643d8686"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.9.mlp.fc1.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 2359296,
+      "sha256": "53d9e316787c8bdcfd43972bc04fc0641ba4518673d19b5cf5c50ca3cbc148d7"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.9.mlp.fc1.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 3072,
+      "sha256": "b9d87c8c45a7a3f6ce7c1a4923f8839bdca91b868e9938ac876b7abe3b6e3a23"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.9.mlp.fc2.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 2359296,
+      "sha256": "0dff3295857905eefd425ad2d8a9181bb19f2b56ff88dc30f10b39c13d8de666"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.9.mlp.fc2.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "0ef4b98d319d0714871c2903969899a9600847d2af1085618cd0d84dc7482d16"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.10.layer_norm1.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "8662d53e88dbf8af5e82ac1f49dd6696cce4353371e657ab99c0b92b26f14c0a"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.10.layer_norm1.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "7ec3290cefcc4c0905fdd75a2218177fcde733aa5cbe962a834da4b598b3d4c3"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.10.self_attn.k_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 589824,
+      "sha256": "b6ff0dc83c9d549143d22c27568e9949591e5cbcea36975d52ed2bf2e2093cf0"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.10.self_attn.k_proj.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "4dd264c655f0f10eddd928aed18b9447d5e6fb49c066cbcb40bcedd0a7b5a981"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.10.self_attn.v_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 589824,
+      "sha256": "16bb31142cdc8c126b7c8cc3124528fc9508e9519cf59bffcebcd4773c362bf2"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.10.self_attn.v_proj.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "76c02f70fc91e9f16817b2458c84a1f66ac9ecf18876ffcc9c65a7bc212e1bc6"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.10.self_attn.q_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 589824,
+      "sha256": "4950b51696598bac8f5c624e31f85c069bd035887fb4e064391f587fd2a7670d"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.10.self_attn.q_proj.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "31c929d2500762d4ec69f454a84819fba34ea7c07ea12a219912e1d045d2b1bc"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.10.self_attn.out_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 589824,
+      "sha256": "2f9cfcaabf14159ef252e018324ca84b201cecaa35ff2233ad86590d9d33e4f7"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.10.self_attn.out_proj.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "010dc629aef8a6333d875eeb6903aa2c1695e3d1c6eb965db380e42deb4e71a7"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.10.layer_norm2.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "de1f4b04936018a73713445671c111fe6543f485028579bb10beaaf41ac9c5bf"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.10.layer_norm2.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "f855d7b1501f1a4cb4fb9d9340c7045cd80c46a522a4ba2296082c8f121f2e98"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.10.mlp.fc1.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 2359296,
+      "sha256": "7d98a1f6529e0cfe2c2d15060ab46b518b26acc93de857557a7cc42157a0075b"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.10.mlp.fc1.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 3072,
+      "sha256": "5a4d3cd343f10f201ab9b3a0405aee36b14710e3ba586b7d998531f2f084a106"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.10.mlp.fc2.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 2359296,
+      "sha256": "102963742c068faa5204ba1584cbefd71cd5a46d11b5793c501eca81ab88b1dd"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.10.mlp.fc2.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "a73870463bd9f46e3ff51f69cd2e670040d53c0cd67492f9546b76be4bc95f5e"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.11.layer_norm1.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "306b85a53030c2e0c1275b0c5d7a3b854e18cb3406f81d28f43ac3444cd7c0ad"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.11.layer_norm1.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "f43996fe5ccc7c410961bfeedde931e10c076fd2868368a8fe69b0760eae3d1f"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.11.self_attn.k_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 589824,
+      "sha256": "e9ee5e11d7d75705ae7246632b3910f4456c7c8b4dfbe63f4036fc125810c4f6"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.11.self_attn.k_proj.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "4f0ce6d969654b3b51041d1f8d84ee57ac52d732a27538ff915753486a793570"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.11.self_attn.v_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 589824,
+      "sha256": "e1643b654eafc657217b3be0bbba8ff8d116abe7444765333279a0375aeab52e"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.11.self_attn.v_proj.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "5bf264871dd372cd575dbff8d3318312d3f0588a3389f2f9f6ab36db6d2af805"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.11.self_attn.q_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 589824,
+      "sha256": "5c90e215f4ee38791c5ba3e9c4d97df03c151eb563130af08ab01bf83f0f8e16"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.11.self_attn.q_proj.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "9b6efb0392888eec1d59d34459200de5609f178718ead7ab2fa9afde86e30dc8"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.11.self_attn.out_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 589824,
+      "sha256": "c87542fce72281304fb7d73337f1c5948b1f18e95659de8222992b1377da7110"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.11.self_attn.out_proj.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "202a07ae2b4faf8cf5ef216b52d26e0b3a5059240d8ce55501c8acc5b375e739"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.11.layer_norm2.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "4c7fa80328b8cffaa0b00a9f91f39f0adbfe3d5f30ccdc3cf91a1237f6295e78"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.11.layer_norm2.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "787513693e69ca404b7106a05351f8b3e5e4b0f66beac415f5ca2919ab6894b5"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.11.mlp.fc1.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 2359296,
+      "sha256": "1a83b69a2413e8afcfeecee5a287d1826b35ee9f4f695601785469526f547381"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.11.mlp.fc1.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 3072,
+      "sha256": "07799cbe1c5e300d38a493d3ce5e443d674134720e294641e3c2c22fc24d1f51"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.11.mlp.fc2.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 2359296,
+      "sha256": "5bd3b9f13a4ad481108d87a7af30a2d155f46af1dd6992fa48fa884839139708"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.encoder.layers.11.mlp.fc2.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "0e6bee7d0ed04cfb130a05fb6b0bc21ed8dbdcb3eab9d627f552c01ea274b09c"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.post_layernorm.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "bd537cee98e62874f12b44f1429bf275f72e7a17eeeae44e00ecc57784fb726d"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.vision_tower.post_layernorm.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 768,
+      "sha256": "f6b0905b8dd636423d3649acada0260b43f8b3c72c97824f77dba3a89b534238"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.multi_modal_projector.linear_1.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 6291456,
+      "sha256": "17262a24a25905e1c23f929768670e8bc4c9b9b61410e2ccf39281c1de3c2508"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.multi_modal_projector.linear_1.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 2048,
+      "sha256": "ea6fb539c3a268a0233dd3754893c3fd55932843941974575d3abc3b7fb67817"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.multi_modal_projector.linear_2.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 2097152,
+      "sha256": "122ccd112bb8a21d4b1a25d2d8eff1b8900646786a5d7f695ba7edc0b75de1f0"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.multi_modal_projector.linear_2.bias",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 1024,
+      "sha256": "dd28b15f72827f744b2cd62f1f70dd5f36173ad7183b0e0bf09a4f2077b366df"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.embed_tokens.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 67108864,
+      "sha256": "9ff7054e7ccb91937cf032fb2fad0b459c168e60fbb379bc4c030ed17ef2165c"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.0.conv.conv.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 3072,
+      "sha256": "96c4217f85e6284762ed93da04cac0c82f272752ac56be4091ae74a76ad110a6"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.0.conv.in_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 3145728,
+      "sha256": "73a7d2580cb563299903a70e18d9b7f1fb4f1a147f1f623c4e7d9132c6b95324"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.0.conv.out_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 1048576,
+      "sha256": "448a854a1252c1987ecb4adaf64c6604a3a829669beed44c88ada6862f83fbd7"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.0.feed_forward.w1.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 4718592,
+      "sha256": "07b297089341d497641584f3aa6ebb6d43011455c7b455f160b66ca75de7f43a"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.0.feed_forward.w3.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 4718592,
+      "sha256": "34aad67c08bc9a8e9c182262d11134c1216b8d0fd37bbbec38afda37dccd5d4d"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.0.feed_forward.w2.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 4718592,
+      "sha256": "327a1860d994128432bb917f97cc16990ec92eb02b5df37226b2cc602a01ce2f"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.0.operator_norm.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 1024,
+      "sha256": "4a934a1e18f70bf52161ee167d952600bc4cd2fb8833db5c2421d6e4f4397c99"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.0.ffn_norm.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 1024,
+      "sha256": "9ed921832f6083f60ef6796fa490542387423ff5c54854f6123532abc4e9300c"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.1.conv.conv.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 3072,
+      "sha256": "e323cd5e4ad275be63daa021ff9c6a03ee8a2c4702abcff72e2e082a4e144e52"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.1.conv.in_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 3145728,
+      "sha256": "4ad98cb573b0340294fceefc31f981171e54edc7c8582643d2246e8915623f1e"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.1.conv.out_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 1048576,
+      "sha256": "a4b3cc5acd6557648448161a4a702541fcbe83bbe78f31308e51955ade5b7cea"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.1.feed_forward.w1.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 4718592,
+      "sha256": "52073d02838fd79a492f13b182243a67ca1bf2236283ac88f7857de93ed2073d"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.1.feed_forward.w3.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 4718592,
+      "sha256": "b3c59f1c4278c4250fae0fb274e5d2a51807f8fd7005d2eb7351d37d2807084c"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.1.feed_forward.w2.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 4718592,
+      "sha256": "d817bdd2ad260c04f8b6ddcc7201ce72d2cca35dfe63e59985c17f5730207e31"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.1.operator_norm.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 1024,
+      "sha256": "6bd57ec8d6a629185c693356fcdb63bbc3080a0802f072aadc7acea9d1ad742d"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.1.ffn_norm.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 1024,
+      "sha256": "42e846311d7914ad6e2a5ad0cdc47c120954f04323d5294696a666504ca04d9a"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.2.self_attn.q_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 1048576,
+      "sha256": "818493e7c9f54f5a7456f7aa2a8744cbdc645b2ea6fc327b17e37861f952e22f"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.2.self_attn.k_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 524288,
+      "sha256": "be2ceab614378d7fc6c83a40a1e10645376875315e8b114b01f4deafa347ce57"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.2.self_attn.v_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 524288,
+      "sha256": "c84641c0142ecb5179b4186794095b2465025345b7f0a709b94d0461a3c7d8ea"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.2.self_attn.out_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 1048576,
+      "sha256": "07c595a4f67a46331a1aec8d4a9d38e97717e55a047c6ca1659417ed2699d0d9"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.2.self_attn.q_layernorm.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 64,
+      "sha256": "b8649579fb625fd5f6ada7d4b636c166c993b6bee4aa98f82f4914a9a1790bd6"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.2.self_attn.k_layernorm.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 64,
+      "sha256": "5082abbae139546846c7f18c31319eb275113618ccc0f49e47accec521bd9361"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.2.feed_forward.w1.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 4718592,
+      "sha256": "0818a70eeb0fb935adf40e6f295c9a9b2e77c6a25a586992ec3cc4c456874866"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.2.feed_forward.w3.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 4718592,
+      "sha256": "311654d913a0cff4f4721630ee154ed2ad0d80f8a416d597058e8790e67c7207"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.2.feed_forward.w2.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 4718592,
+      "sha256": "fbe13ea68efabb0914af2010ccf643dcabf46311b75c22b34797138fd7684828"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.2.operator_norm.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 1024,
+      "sha256": "3edb15ca1db2b323c02695e3fee9cd8dd4e2b6635667ee829e5353d98940a5d6"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.2.ffn_norm.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 1024,
+      "sha256": "0a1438927b671de195058e33c936dcf33fa39c90954c93c1ae1e279c96dae103"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.3.conv.conv.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 3072,
+      "sha256": "94d186df898404fa0b16ebc31fa0b6482051af9ea9beb6a74c205da6d3fe0592"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.3.conv.in_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 3145728,
+      "sha256": "749329dc0abb2089a50d373a851778b53468c6dc0ab6223416cd59c4616396d9"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.3.conv.out_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 1048576,
+      "sha256": "12e29619be681bb391cfcf3d18faf53c9bc9f00659ca2ba6e9f2f72d19808778"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.3.feed_forward.w1.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 4718592,
+      "sha256": "acdd138b9b5007d33bc26aee5c9431d6fefa2ba59ac89ce389c29219fa9f8cc0"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.3.feed_forward.w3.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 4718592,
+      "sha256": "99f183d18c008551c90b4abc9af06c14584c38b4f41e0e6041e91ff7ad11420b"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.3.feed_forward.w2.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 4718592,
+      "sha256": "7defa692841c7f288e6cd104eb05460fe7555dab104b8b49905c9227b5ac8a42"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.3.operator_norm.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 1024,
+      "sha256": "e85750962e1e759485daa55db8cdb18fa162b0e3692005339ccd9633fc89c45a"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.3.ffn_norm.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 1024,
+      "sha256": "3584fbf48848fabd37ae8170af6cd8451e72a9d659ce283fea670f5ffa80b30b"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.4.conv.conv.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 3072,
+      "sha256": "dbeaff75b70f0662884be6be521550ac6011b039c9bb627dd0f8427f6b64b0b6"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.4.conv.in_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 3145728,
+      "sha256": "449e9ef9bc8e27b0bee27bc310be1b282684a5829a62f5b04bc62e6c921505ed"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.4.conv.out_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 1048576,
+      "sha256": "c6fd228613557a6e039c958b35c3ad5c2505be7d825991b82fe7de8b06d736fb"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.4.feed_forward.w1.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 4718592,
+      "sha256": "a99bfb25fc9d305880a442e2bc4759858fd2d59797a89acdd07c4f529159f150"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.4.feed_forward.w3.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 4718592,
+      "sha256": "61fe8c33a769d60ffb6f4e625a378a7de96257594247a6c012db5822db39eb19"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.4.feed_forward.w2.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 4718592,
+      "sha256": "132494013ef4a1839724286f5fd318fe16e9d2bfc6bbf5e1c80bd9c1204fdb01"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.4.operator_norm.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 1024,
+      "sha256": "7cfdbe446df49ad6944bbe052e3cc061161e444a400815bc5a1d1e947cefc7ac"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.4.ffn_norm.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 1024,
+      "sha256": "af2043114487d7666799a9e97d931f46e99a64c4e07c70ad07c60d5ac19967e4"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.5.self_attn.q_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 1048576,
+      "sha256": "d1d7803dde1d6075b9c96632bced50673924ee9c32f5dac9bae96203a68d2a25"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.5.self_attn.k_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 524288,
+      "sha256": "1987d029500f97f1f85d1291abc3819085d4642c9e9a6344f985ab9a65f1484d"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.5.self_attn.v_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 524288,
+      "sha256": "9aa618cad1bb5453b14e28f57685240f2c20270c64b6d9fdde5da9f9edb5ae01"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.5.self_attn.out_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 1048576,
+      "sha256": "3a1ea40d0623ac618037de8d74b80fb85c0d4ba51ba4d65e37383a282fe3c998"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.5.self_attn.q_layernorm.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 64,
+      "sha256": "d6a76982410b17e61333c90eb0e527b18f6374dcbaed28106eb7d2f55b64d578"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.5.self_attn.k_layernorm.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 64,
+      "sha256": "7e7823b755691e710890f5c97cd954227004c3b95293d1ca08806251745662fb"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.5.feed_forward.w1.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 4718592,
+      "sha256": "2691c379fca3838f24654f230f483ed893aab64a7278ced0381824b82d461c78"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.5.feed_forward.w3.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 4718592,
+      "sha256": "a844b14fc5355383d6effc0dab196e87e240c31f9f919b7f49a3e19516b702d5"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.5.feed_forward.w2.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 4718592,
+      "sha256": "cc576bee9c15379be32fedb7da49b51d2565915560b026c53164182c1fd9ff09"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.5.operator_norm.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 1024,
+      "sha256": "0919cc5fb6c9345996df983d02b93da8f85e4cc6e47458e5ad341631cc6785ae"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.5.ffn_norm.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 1024,
+      "sha256": "79541cb9918bb6c0d10c2db2c5df53d3d904e793d679e6774d8f92c4bf16b220"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.6.conv.conv.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 3072,
+      "sha256": "67e7b18aef9fb21d884393901bd6e9287c2964e292cdd11b1f8a0c7ba65f011d"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.6.conv.in_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 3145728,
+      "sha256": "5106d8aa809679c449b5667e29a8db7da4b083adc15dca5f24530d94e227649e"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.6.conv.out_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 1048576,
+      "sha256": "5dfd0b98870f720ea6f291900250cd464f47fa625f5a8cd1f5a8f20bb079c72a"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.6.feed_forward.w1.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 4718592,
+      "sha256": "7ed95b6b38a328e5d82ed48da24177edfa8786c84b691e324879976536dd6a94"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.6.feed_forward.w3.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 4718592,
+      "sha256": "695f24116f23eb55e808eb118eb7170a04eab33e0e565bdb266a3d7eecd84478"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.6.feed_forward.w2.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 4718592,
+      "sha256": "6f0a16a2192c7b9320bf4e24d59f9a9fa44e8411cb5501b024a7b2010b8d0c69"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.6.operator_norm.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 1024,
+      "sha256": "7b4655d6ee224b3923d9ca608c19accdd9861e28b77e0c1d25ebf62dad474424"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.6.ffn_norm.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 1024,
+      "sha256": "bb4c9a9f6a005f9ee4bea40d154264b47bf460624fd505e59c1f79c8aef65e6b"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.7.conv.conv.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 3072,
+      "sha256": "fb8d1b1cc58d57dc50bfa8f21cccc8fb5dfadd3794bdb9ef243b8ce5bcb6bc8c"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.7.conv.in_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 3145728,
+      "sha256": "26ef2cfe18efeb334eb254a989b1349492eed3f46f5f04b31f5f4ba5cb0986d2"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.7.conv.out_proj.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 1048576,
+      "sha256": "61ab513b2ffb2f6060093889aa40d08b1123468adbaf07eb2185e43cbb5d9f7d"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.7.feed_forward.w1.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 4718592,
+      "sha256": "3ba00ab4580ea91bd50bf39d0c9202a4ed3e61d2053c55d22bd737ee29bf17cd"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.7.feed_forward.w3.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 4718592,
+      "sha256": "494ee54af03bf35584de0f8cb9a965d6bd6719545d675788cc37c01356f18d87"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.7.feed_forward.w2.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 4718592,
+      "sha256": "43204794b572ef0baa646c6ce35d5a37b5d9b35ae97cb92409048acd8f471dc7"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.7.operator_norm.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 1024,
+      "sha256": "61c7df30db99f316e680bfa634c4ed4f0396c2a9fb0eca120234c622c5bd6281"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.layers.7.ffn_norm.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 1024,
+      "sha256": "accbb9bc79122cb5e5704356f161bd3c6f8982ed7c12e9a788d7472e63dfce07"
+    },
+    {
+      "name": "model.lfm_adapter.backbone.model.language_model.embedding_norm.weight",
+      "group": "lfm_backbone",
+      "init_source": "pretrained_frozen",
+      "requires_grad": false,
+      "numel": 1024,
+      "sha256": "3562cb50e14ab1b7b774ca44fb95d5b43943f41dbef52bec0094a3d0039f3778"
+    },
+    {
+      "name": "model.lfm_adapter.conditioner.layer_bias",
+      "group": "conditioner",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 10240,
+      "sha256": "02b1c2234680617802901a77eae606ad02e4ddb4282ccbc60061eac5b2d90bba"
+    },
+    {
+      "name": "model.lfm_adapter.conditioner.mapper.0.weight",
+      "group": "conditioner",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 1048576,
+      "sha256": "4c82efded098ff5249d3731f572dac984abccb4b9f2acacd6e058dc30acd53d8"
+    },
+    {
+      "name": "model.lfm_adapter.conditioner.mapper.0.bias",
+      "group": "conditioner",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 1024,
+      "sha256": "eb76c16240942384bf8bb275011e923c8c38fe53b72257a876bf18f893d61be5"
+    },
+    {
+      "name": "model.lfm_adapter.conditioner.mapper.2.weight",
+      "group": "conditioner",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 1024,
+      "sha256": "e9bac255f4adc7cb4ada9298e193a5ff66b434d15afabd458505325f29c398c7"
+    },
+    {
+      "name": "model.lfm_adapter.conditioner.mapper.2.bias",
+      "group": "conditioner",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 1024,
+      "sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7"
+    },
+    {
+      "name": "model.lfm_adapter.conditioner.state_bridge.weight",
+      "group": "conditioner",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 983040,
+      "sha256": "8dfef20357ceea1ff442e0cf7b4bf9336002b2b600681da3f755619c68b3c967"
+    },
+    {
+      "name": "model.lfm_adapter.conditioner.state_bridge.bias",
+      "group": "conditioner",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 1024,
+      "sha256": "a3ad96e9bef2979f81c42b7ab6e2417d30581fdb050c4c549d7f01651442629f"
+    },
+    {
+      "name": "model.lfm_adapter.conditioner.kv_projection.weight",
+      "group": "conditioner",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 655360,
+      "sha256": "71e3865806399340e70e7359be90a9499b4a868ebe9c5a0309032ec668a3f2fa"
+    },
+    {
+      "name": "model.lfm_adapter.conditioner.kv_projection.bias",
+      "group": "conditioner",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 640,
+      "sha256": "5e8db5f62dbbcf8afe646145855d7fa47ed780b2126c502fe980bc52bb3e2234"
+    },
+    {
+      "name": "model.lfm_adapter.conditioner.gate_network.0.weight",
+      "group": "conditioner",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 131072,
+      "sha256": "d9058e828b25bfae4923eb7b24b2b1f240e87512cd7bb33cc7c3c2cf14789abe"
+    },
+    {
+      "name": "model.lfm_adapter.conditioner.gate_network.0.bias",
+      "group": "conditioner",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 128,
+      "sha256": "517368755ded0fc6a1b6db76ae62ad641824b0d1adc4991dde34b05ef672b4de"
+    },
+    {
+      "name": "model.lfm_adapter.conditioner.gate_network.2.weight",
+      "group": "conditioner",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 2048,
+      "sha256": "fc1d0631bb7bde2408632222e6f93725a7c630775cc370eb0d8db385983d8925"
+    },
+    {
+      "name": "model.lfm_adapter.conditioner.gate_network.2.bias",
+      "group": "conditioner",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 16,
+      "sha256": "1508c1a031b247bdfc6be47e99485bf3bffb637ff131e6c9c3ab03579f222e4c"
+    }
+  ]
+}

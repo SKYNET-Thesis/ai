@@ -1,0 +1,11 @@
+episode_id,task,n_windows,mae,nmae,mse,jerk_norm
+354,"pick up pens and rubber, place them into the white box",9,24.2431,0.7796,1134.1519,0.0188
+358,"pick up pens and rubber, place them into the white box",9,22.7915,0.6922,1006.1544,0.0192
+104, put all object on the table into the white box,9,20.7452,0.6644,977.5168,0.0217
+212,put the pens and the rubber into the white box,9,20.4055,0.6494,835.3721,0.0211
+274,put the pens and the rubber into the white box,9,19.9193,0.6322,823.0033,0.0294
+95,put the pens and the rubber into the white box,9,19.5455,0.6484,710.9464,0.0234
+98,put the pens and the rubber into the white box,9,19.2333,0.6864,812.2618,0.0219
+229,put the pens and the rubber into the white box,9,19.1159,0.6094,877.4523,0.018
+226,put the pens and the rubber into the white box,9,18.6007,0.6086,823.9271,0.0215
+372,"pick up pens and rubber, place them into the white box",9,18.1662,0.5692,662.6505,0.0232

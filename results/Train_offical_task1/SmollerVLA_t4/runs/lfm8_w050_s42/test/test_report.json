@@ -1,0 +1,148 @@
+{
+  "schema_version": "1.0",
+  "run_id": "lfm8_w050_s42",
+  "model_key": "L8_W05",
+  "valid": true,
+  "checkpoint": {
+    "step": 3960,
+    "val_loss": 0.1808534211753672,
+    "sha256": "2c5c169af7576aa22d0a1500923939e007ab9ca96b7fa253159884d59a35bf90"
+  },
+  "n_test_episodes": 112,
+  "n_test_windows": 1008,
+  "metrics": {
+    "mae": {
+      "mean": 6.759454068639924,
+      "sd": 1.2057266530669892,
+      "median": 6.638041434467364,
+      "p90": 8.464388153453235,
+      "ci_lo": 6.537827529745172,
+      "ci_hi": 6.981184620229982
+    },
+    "nmae": {
+      "mean": 0.2355131823431198,
+      "sd": 0.03856061415131007,
+      "median": 0.23078668408084646,
+      "p90": 0.28747308758522094,
+      "ci_lo": 0.22831612682979305,
+      "ci_hi": 0.2426682334447364
+    },
+    "mse": {
+      "mean": 127.8437035118639,
+      "sd": 65.03574775147615,
+      "median": 106.84473147826098,
+      "p90": 188.85627979164667,
+      "ci_lo": 116.13114280529221,
+      "ci_hi": 140.60647079038287
+    },
+    "rmse": {
+      "mean": 9.84178935521021,
+      "sd": 1.8675836641414307,
+      "median": 9.446589371422482,
+      "p90": 12.223561037733203,
+      "ci_lo": 9.498085535805966,
+      "ci_hi": 10.194466091628799
+    },
+    "jerk_norm": {
+      "mean": 0.10054171181755225,
+      "sd": 0.009225017628111582,
+      "median": 0.09955238289029897,
+      "p90": 0.109910279550807,
+      "ci_lo": 0.09889135535566557,
+      "ci_hi": 0.10229519991596879
+    },
+    "accel_norm": {
+      "mean": 0.056800083561674604,
+      "sd": 0.005026003396060295,
+      "median": 0.05657702468588352,
+      "p90": 0.0619692906426787,
+      "ci_lo": 0.05590902215031283,
+      "ci_hi": 0.05775680275282578
+    },
+    "smoothness_ratio": {
+      "mean": 56.468847960044506,
+      "sd": 35.605414287477444,
+      "median": 44.77754098143981,
+      "p90": 93.50340273057779,
+      "ci_lo": 50.2850858045327,
+      "ci_hi": 63.27005009545305
+    },
+    "gt_jerk": {
+      "mean": 0.10468013215387824,
+      "sd": 0.011511921800456144,
+      "median": 0.1045617980028813,
+      "p90": 0.11958031308216353,
+      "ci_lo": 0.10251332767149131,
+      "ci_hi": 0.10681184847867876
+    },
+    "jerk_in_chunk": {
+      "mean": 2.864685430496702,
+      "sd": 0.2519165694966329,
+      "median": 2.8297491301603506,
+      "p90": 3.185680145239148,
+      "ci_lo": 2.8188611478115675,
+      "ci_hi": 2.9120729834205656
+    }
+  },
+  "bjump": {
+    "mean": 34.2223432377466,
+    "sd": 20.669049402280695,
+    "n_seams": 112,
+    "mode": "seeded_one_seam_pair_per_episode"
+  },
+  "latency": {
+    "n_runs": 300,
+    "warmup": 10,
+    "p50_ms": 687.529787497624,
+    "p95_ms": 712.4050571492262,
+    "p99_ms": 732.5467273360846,
+    "mean_ms": 689.2863697100498,
+    "std_ms": 11.074180863655936,
+    "preprocess_mean_ms": 12.119836779966136,
+    "device": "Tesla T4",
+    "backbone_dtype": "float32",
+    "causal_conv1d_installed": false
+  },
+  "complexity": {
+    "gflops_infer_chunk": 761.086533632,
+    "gmacs_infer_chunk": 380.543266816,
+    "gflops_forward": 701.314322432,
+    "gflops_train_step": 715.404808192,
+    "params_total": 365410416,
+    "params_trainable": 59327088,
+    "params_active": 365410416,
+    "peak_infer_vram_gb": 2.4089202880859375,
+    "counter": "torch.utils.flop_counter.FlopCounterMode",
+    "counter_note": "matmul/bmm/conv/sdpa only (1 MAC = 2 FLOPs); elementwise ops, softmax/sigmoid and the CPU LFM image processor are not counted"
+  },
+  "training": {
+    "wall_time_total_s": 38822.50708198547,
+    "gpu_hours": 10.784029744995966,
+    "steps_per_s": 0.22443826378836604
+  },
+  "protocol": {
+    "windows_per_episode": 9,
+    "draws_per_window": 1,
+    "num_steps": 10,
+    "bootstrap_B": 10000,
+    "test_seed": 2024,
+    "train_action_std": [
+      24.438461754271742,
+      47.71340385952907,
+      48.38390501317067,
+      15.943479296744293,
+      34.48627439793413,
+      14.920328103778193
+    ],
+    "nmae": "mean_d(MAE_d / std_d(train))",
+    "jerk_norm": "mean_d(mean|3rd diff|_d / std_d(train))",
+    "dtype": {
+      "lfm_backbone": "fp32",
+      "expert_gates": "fp32"
+    }
+  },
+  "warnings": [
+    "causal_conv1d not installed: LFM conv layers use the slow reference path (latency is pessimistic)",
+    "197 LFM tensors could not be matched to Hugging Face key names; 76 were verified equal"
+  ]
+}

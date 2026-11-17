@@ -1,0 +1,141 @@
+backbone:
+  dtype: float32
+  id: LiquidAI/LFM2.5-VL-450M
+  img_size: 256
+  keep_layers: 8
+  vis_tokens: 48
+  vis_tokens_per_cam: 48
+cli_argv:
+- --policy.type=smolvla
+- --policy.push_to_hub=false
+- --policy.device=cuda
+- --policy.load_vlm_weights=false
+- --policy.expert_width_multiplier=0.5
+- --policy.scheduler_decay_steps=4000
+- --dataset.repo_id=yamaisanerd/Chunking_560_Skynet
+- --dataset.revision=cdebd878d63c7798d93ca6557a0527fc9934553a
+- --dataset.video_backend=pyav
+- --batch_size=16
+- --num_workers=2
+- --steps=4000
+- --log_freq=50
+- --save_checkpoint=false
+- --tf32=false
+- --seed=42
+- --job_name=smollervla
+- --output_dir=/kaggle/working/small_test_vla/runs/lfm8_w050_nogate_s42/_lerobot_unused
+data:
+  repo_id: yamaisanerd/Chunking_560_Skynet
+  revision: cdebd878d63c7798d93ca6557a0527fc9934553a
+  split_hash: 6a12c85352049b488aa6b220d79adb865282f80d525e7c9b5cda20eb59cb0d8d
+  split_manifest: splits/split_manifest.json
+  video_backend: pyav
+determinism:
+  cublas_workspace: :4096:8
+  cudnn_deterministic: true
+  deterministic_algorithms: warn_only
+  tf32: false
+eval:
+  test:
+    bootstrap_B: 10000
+    draws: 1
+    num_steps: 10
+    test_seed: 2024
+    windows_per_episode: 9
+  val:
+    K: 10
+    dims: real
+    noise_seed: 1234
+    stride: 50
+    t: (k+0.5)/K, k=0..K-1
+optim:
+  betas:
+  - 0.9
+  - 0.95
+  decay_lr: 2.5e-06
+  decay_steps: 4000
+  eps: 1.0e-08
+  grad_clip_norm: 10
+  lr: 0.0001
+  scheduler: CosineDecayWithWarmupSchedulerConfig
+  warmup_steps: 1000
+  weight_decay: 1.0e-10
+policy:
+  adapt_to_pi_aloha: false
+  add_image_special_tokens: false
+  attention_mode: cross_attn
+  chunk_size: 50
+  compile_mode: max-autotune
+  compile_model: false
+  device: cuda
+  dtype: null
+  empty_cameras: 0
+  expert_width_multiplier: 0.5
+  freeze_vision_encoder: true
+  input_features: {}
+  license: null
+  load_vlm_weights: false
+  max_action_dim: 32
+  max_period: 4.0
+  max_state_dim: 32
+  min_period: 0.004
+  n_action_steps: 50
+  n_obs_steps: 1
+  normalization_mapping:
+    ACTION: MEAN_STD
+    STATE: MEAN_STD
+    VISUAL: IDENTITY
+  num_expert_layers: -1
+  num_steps: 10
+  num_vlm_layers: 16
+  optimizer_betas:
+  - 0.9
+  - 0.95
+  optimizer_eps: 1.0e-08
+  optimizer_fused: null
+  optimizer_grad_clip_norm: 10
+  optimizer_lr: 0.0001
+  optimizer_weight_decay: 1.0e-10
+  output_features: {}
+  pad_language_to: longest
+  prefix_length: -1
+  pretrained_path: null
+  pretrained_revision: null
+  private: null
+  push_to_hub: false
+  repo_id: null
+  resize_imgs_with_padding:
+  - 512
+  - 512
+  rtc_config: null
+  scheduler_decay_lr: 2.5e-06
+  scheduler_decay_steps: 4000
+  scheduler_warmup_steps: 1000
+  self_attn_every_n_layers: 2
+  tags: null
+  tokenizer_max_length: 48
+  train_expert_only: true
+  train_state_proj: true
+  use_amp: false
+  use_cache: true
+  use_delta_joint_actions_aloha: false
+  use_peft: false
+  vlm_model_name: HuggingFaceTB/SmolVLM2-500M-Video-Instruct
+seeds:
+  bootstrap_seed: 20240
+  split_seed: 42
+  test_seed: 2024
+  train_seed: 42
+  val_seed: 1234
+train:
+  batch_size: 16
+  effective_batch_size: 32
+  ema: null
+  grad_accum: 1
+  num_workers: 2
+  parallelism: DDP
+  precision: fp32
+  save_freq: 0
+  steps: 4000
+  val_every: 10
+  world_size: 2

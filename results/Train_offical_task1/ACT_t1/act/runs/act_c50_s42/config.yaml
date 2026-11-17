@@ -1,0 +1,114 @@
+backbone:
+  dtype: float32
+  id: resnet18
+  weights: ResNet18_Weights.IMAGENET1K_V1
+cli_argv:
+- --policy.type=act
+- --policy.push_to_hub=false
+- --policy.device=cuda
+- --policy.chunk_size=50
+- --policy.n_action_steps=50
+- --dataset.repo_id=yamaisanerd/Chunking_560_Skynet
+- --dataset.revision=cdebd878d63c7798d93ca6557a0527fc9934553a
+- --dataset.video_backend=pyav
+- --batch_size=16
+- --num_workers=2
+- --steps=4000
+- --log_freq=50
+- --save_checkpoint=false
+- --tf32=false
+- --seed=42
+- --job_name=act
+- --output_dir=/kaggle/working/small_test_vla/runs/act_c50_s42/_lerobot_unused
+data:
+  repo_id: yamaisanerd/Chunking_560_Skynet
+  revision: cdebd878d63c7798d93ca6557a0527fc9934553a
+  split_hash: 6a12c85352049b488aa6b220d79adb865282f80d525e7c9b5cda20eb59cb0d8d
+  split_manifest: splits/split_manifest.json
+  video_backend: pyav
+determinism:
+  cublas_workspace: :4096:8
+  cudnn_deterministic: true
+  deterministic_algorithms: warn_only
+  tf32: false
+eval:
+  test:
+    bootstrap_B: 10000
+    draws: 1
+    test_seed: 2024
+    windows_per_episode: 9
+  val:
+    dims: real
+    metric: masked L1 (normalised actions, real dims), deterministic z=0
+    stride: 50
+optim:
+  betas:
+  - 0.9
+  - 0.999
+  decay_lr: null
+  decay_steps: null
+  eps: 1.0e-08
+  grad_clip_norm: 10.0
+  lr: 1.0e-05
+  scheduler: null
+  warmup_steps: null
+  weight_decay: 0.0001
+policy:
+  chunk_size: 50
+  device: cuda
+  dim_feedforward: 3200
+  dim_model: 512
+  dropout: 0.1
+  dtype: null
+  feedforward_activation: relu
+  input_features: {}
+  kl_weight: 10.0
+  latent_dim: 32
+  license: null
+  n_action_steps: 50
+  n_decoder_layers: 1
+  n_encoder_layers: 4
+  n_heads: 8
+  n_obs_steps: 1
+  n_vae_encoder_layers: 4
+  normalization_mapping:
+    ACTION: MEAN_STD
+    STATE: MEAN_STD
+    VISUAL: MEAN_STD
+  optimizer_fused: null
+  optimizer_lr: 1.0e-05
+  optimizer_lr_backbone: 1.0e-05
+  optimizer_weight_decay: 0.0001
+  output_features: {}
+  pre_norm: false
+  pretrained_backbone_weights: ResNet18_Weights.IMAGENET1K_V1
+  pretrained_path: null
+  pretrained_revision: null
+  private: null
+  push_to_hub: false
+  replace_final_stride_with_dilation: false
+  repo_id: null
+  tags: null
+  temporal_ensemble_coeff: null
+  use_amp: false
+  use_peft: false
+  use_vae: true
+  vision_backbone: resnet18
+seeds:
+  bootstrap_seed: 20240
+  split_seed: 42
+  test_seed: 2024
+  train_seed: 42
+  val_seed: 1234
+train:
+  batch_size: 16
+  effective_batch_size: 32
+  ema: null
+  grad_accum: 1
+  num_workers: 2
+  parallelism: DDP
+  precision: fp32
+  save_freq: 0
+  steps: 4000
+  val_every: 10
+  world_size: 2

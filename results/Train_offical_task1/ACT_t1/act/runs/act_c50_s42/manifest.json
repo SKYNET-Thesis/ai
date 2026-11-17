@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0",
+  "run_id": "act_c50_s42",
+  "model_key": "ACT_C50",
+  "status": "degenerate",
+  "valid": false,
+  "model": {
+    "arch": "ACT (stock lerobot)",
+    "chunk_size": 50,
+    "use_vae": true,
+    "kl_weight": 10.0,
+    "backbone_id": "resnet18",
+    "gated": false,
+    "params_by_group": {
+      "CVAE encoder (train-time only)": {
+        "total": 17373248,
+        "trainable": 17373248
+      },
+      "ResNet18 backbone (ImageNet-pretrained)": {
+        "total": 11166912,
+        "trainable": 11166912
+      },
+      "transformer encoder/decoder + projections": {
+        "total": 23031430,
+        "trainable": 23031430
+      }
+    },
+    "params_total": 51571590,
+    "params_trainable": 51571590,
+    "params_active": 34198342
+  },
+  "revisions": {
+    "backbone_weights": "ResNet18_Weights.IMAGENET1K_V1",
+    "dataset": "cdebd878d63c7798d93ca6557a0527fc9934553a"
+  },
+  "seeds": {
+    "split_seed": 42,
+    "train_seed": 42,
+    "val_seed": 1234,
+    "test_seed": 2024,
+    "bootstrap_seed": 20240
+  },
+  "hashes": {
+    "config_hash": "a86bc9c5f8989c15ce5edb6b025cceba6fc317f1371927627a3c0236d8ee21b9",
+    "split_hash": "6a12c85352049b488aa6b220d79adb865282f80d525e7c9b5cda20eb59cb0d8d",
+    "best_ckpt_sha256": "e4a56e084662e5f540002c38bf7a5beeb25c076ab5185e12757ee10a5fcc548a"
+  },
+  "code": {
+    "git_sha": "nogit:632d7594af49",
+    "git_dirty": false,
+    "script_sha256": "632d7594af4915595fa888ca91abc1c03f5d2b77c240090a892f01ee94a28947",
+    "lerobot_files_sha256": {
+      "configuration_act.py": "7f5cce7ef62101fa5702a2abd83b2e5d93ac343a9dd35b271d893ccb4f31f037",
+      "modeling_act.py": "83d954f79ccd3eaa6774dbea92524939c8ac08359bb355ba7cd37b8601e1e3af",
+      "processor_act.py": "247d3b13c93568c1fb35349716f8c3b6a53c2e7a5c8b098928471172b0bf0ef2"
+    },
+    "python": "3.13.16",
+    "torch": "2.11.0+cu130",
+    "torchvision": "0.26.0+cu130",
+    "cuda": "13.0",
+    "driver": "580.178.04",
+    "lerobot_commit": "7910c20a75834ad3fa6a9792df4d44a614d1bba6",
+    "lerobot_version": "0.7.1"
+  },
+  "hardware": {
+    "gpu_names": [
+      "Tesla T4",
+      "Tesla T4"
+    ],
+    "world_size": 2,
+    "mixed_precision": "no (fp32)",
+    "tf32": false
+  },
+  "training": {
+    "steps": 4000,
+    "batch_size_per_device": 16,
+    "effective_batch_size": 32,
+    "best_step": 2410,
+    "best_val_loss": 0.7613406782013648,
+    "first_val_loss": 0.8384143983694773,
+    "wall_time_total_s": 12742.547810077667,
+    "wall_time_train_only_s": 4121.027153253555,
+    "wall_time_val_s": 8621.520656824112,
+    "gpu_hours": 3.5395966139104633,
+    "wall_time_full_run_s": 21172.332626581192,
+    "wall_time_full_run_val_s": 14359.978883743286,
+    "val_setup_s": 68.2867078781128,
+    "steps_per_s": 0.5871685691902533,
+    "samples_per_s": 18.789394214088105,
+    "peak_train_vram_gb": 10.695691585540771,
+    "n_val_windows": 1370,
+    "world_size": 2,
+    "val_note": "ACT validation is deterministic masked L1 (no sampled noise / time); training loss is L1 + kl_weight*KLD",
+    "test_log_csv": true
+  },
+  "timestamps": {
+    "started_utc": "2026-11-17T03:24:00+00:00",
+    "finished_utc": "2026-11-17T09:20:54+00:00"
+  },
+  "warnings": []
+}

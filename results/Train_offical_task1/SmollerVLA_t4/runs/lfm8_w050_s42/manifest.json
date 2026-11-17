@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.0",
+  "run_id": "lfm8_w050_s42",
+  "model_key": "L8_W05",
+  "status": "complete",
+  "valid": true,
+  "model": {
+    "lfm_layers": 8,
+    "expert_width_multiplier": 0.5,
+    "gated": true,
+    "gate_headwise": false,
+    "gate_bias_init": 4.0,
+    "backbone_id": "LiquidAI/LFM2.5-VL-450M",
+    "params_by_group": {
+      "action expert": {
+        "total": 48348640,
+        "trainable": 48348640
+      },
+      "G1 attention gates": {
+        "total": 7388160,
+        "trainable": 7388160
+      },
+      "state/action/time projections": {
+        "total": 755072,
+        "trainable": 755072
+      },
+      "LFM2.5-VL backbone (frozen, pretrained)": {
+        "total": 306083328,
+        "trainable": 0
+      },
+      "AdaptiveConditionalGatedKV (conditioner)": {
+        "total": 2835216,
+        "trainable": 2835216
+      }
+    },
+    "params_total": 365410416,
+    "params_trainable": 59327088,
+    "params_active": 365410416
+  },
+  "revisions": {
+    "lfm": "fc6221ca597f3315e4f82fc2df606783267b34ba",
+    "smolvlm2_config_tokenizer": "4cde9d208e19519c36917aa170fffc7e381aa0ad",
+    "dataset": "cdebd878d63c7798d93ca6557a0527fc9934553a",
+    "smolvla_base_used_only_for_audit": "5e8d12a6e2975b0e5e5fce7c8caf47c371d257b6"
+  },
+  "seeds": {
+    "split_seed": 42,
+    "train_seed": 42,
+    "val_seed": 1234,
+    "test_seed": 2024,
+    "bootstrap_seed": 20240
+  },
+  "hashes": {
+    "config_hash": "76882c7c9a3f4e1d6210067d5132127043eecd3b9c33a767af31fdb629678e1e",
+    "split_hash": "6a12c85352049b488aa6b220d79adb865282f80d525e7c9b5cda20eb59cb0d8d",
+    "best_ckpt_sha256": "2c5c169af7576aa22d0a1500923939e007ab9ca96b7fa253159884d59a35bf90"
+  },
+  "code": {
+    "git_sha": "nogit:f937a53b91f9",
+    "git_dirty": false,
+    "script_sha256": "f937a53b91f9ad2bf2eeac088e5e36d62d54d90997843c5d9472fa300bb7503f",
+    "patched_lerobot_files_sha256": {
+      "configuration_smolvla.py": "22c87bcd2839a43d180167ce551bc509ee0f9d904faec1fb5d62e5de33173fd9",
+      "smolvlm_with_expert.py": "2fcefafa97544d4018a5117c832b93233c3edd72726f6d01bbb8ed90f9e0abb1",
+      "modeling_smolvla.py": "54fc1396e74bbfafb9107eae03cd9eaa5efecf36655a1c9530227acaae19d0b8"
+    },
+    "python": "3.13.16",
+    "torch": "2.11.0+cu130",
+    "transformers": "5.22.2",
+    "cuda": "13.0",
+    "driver": "580.178.04",
+    "lerobot_commit": "7910c20a75834ad3fa6a9792df4d44a614d1bba6",
+    "lerobot_version": "0.7.1",
+    "causal_conv1d": false
+  },
+  "hardware": {
+    "gpu_names": [
+      "Tesla T4",
+      "Tesla T4"
+    ],
+    "world_size": 2,
+    "mixed_precision": "no (fp32)",
+    "tf32": false
+  },
+  "training": {
+    "steps": 4000,
+    "batch_size_per_device": 16,
+    "effective_batch_size": 32,
+    "best_step": 3960,
+    "best_val_loss": 0.1808534211753672,
+    "first_val_loss": 2.1644768181093377,
+    "wall_time_total_s": 38822.50708198547,
+    "wall_time_train_only_s": 17644.335530757904,
+    "wall_time_val_s": 21178.17155122757,
+    "gpu_hours": 10.784029744995966,
+    "wall_time_full_run_s": 39214.209698200226,
+    "wall_time_full_run_val_s": 21391.936737775803,
+    "val_cache_build_s": 199.67505192756653,
+    "steps_per_s": 0.22443826378836604,
+    "samples_per_s": 7.182024441227713,
+    "peak_train_vram_gb": 3.759854316711426,
+    "n_val_windows": 1370,
+    "world_size": 2,
+    "val_vs_train_t_distribution_note": "validation uses a uniform t grid; training samples t from SmolVLA's Beta-shaped sample_time",
+    "test_log_csv": true
+  },
+  "timestamps": {
+    "started_utc": "2026-11-17T00:11:51+00:00",
+    "finished_utc": "2026-11-17T11:12:36+00:00"
+  },
+  "warnings": [
+    "197 LFM tensors could not be matched to Hugging Face key names; 76 were verified equal"
+  ]
+}

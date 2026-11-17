@@ -1,0 +1,1235 @@
+{
+  "summary": {
+    "params_by_source": {
+      "scratch_trained": 40404678,
+      "pretrained_imagenet": 11166912
+    }
+  },
+  "warnings": [],
+  "rows": [
+    {
+      "name": "model.vae_encoder.layers.0.self_attn.in_proj_weight",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 786432,
+      "sha256": "d782caaac3add171e8c445ad19a104dfb6e2eb840a0193c8ed6ab2c11360caec"
+    },
+    {
+      "name": "model.vae_encoder.layers.0.self_attn.in_proj_bias",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 1536,
+      "sha256": "fd9243e1ba57263ed469c3bdbd7ade6ec5254e7ed924a9f5737fa44749933cc0"
+    },
+    {
+      "name": "model.vae_encoder.layers.0.self_attn.out_proj.weight",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 262144,
+      "sha256": "454882dae4b7f25fa09b20e39925aa8cf663f3f2b5dd37b27ba8fcf3749cf646"
+    },
+    {
+      "name": "model.vae_encoder.layers.0.self_attn.out_proj.bias",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+    },
+    {
+      "name": "model.vae_encoder.layers.0.linear1.weight",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 1638400,
+      "sha256": "26e1e93e7443735450853c4d77c9f8464f87933d573c424e4877dbb62c20530f"
+    },
+    {
+      "name": "model.vae_encoder.layers.0.linear1.bias",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 3200,
+      "sha256": "6c7571af58477d9ee029c4e3988f2f673ce64028e7bd51433ddfda143f602d50"
+    },
+    {
+      "name": "model.vae_encoder.layers.0.linear2.weight",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 1638400,
+      "sha256": "3062f3893443a8ac230d0da1f3931153d29885f2580aa68312ea2f4802d2cb95"
+    },
+    {
+      "name": "model.vae_encoder.layers.0.linear2.bias",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "c0eb7bc9c9662ad61499a88e11a402014548042a7873c2525a426c35e96d1f82"
+    },
+    {
+      "name": "model.vae_encoder.layers.0.norm1.weight",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "fef951e6c76ad6a01b208af650ca6d95769bec840e009981c5ae1316a42c90b1"
+    },
+    {
+      "name": "model.vae_encoder.layers.0.norm1.bias",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+    },
+    {
+      "name": "model.vae_encoder.layers.0.norm2.weight",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "fef951e6c76ad6a01b208af650ca6d95769bec840e009981c5ae1316a42c90b1"
+    },
+    {
+      "name": "model.vae_encoder.layers.0.norm2.bias",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+    },
+    {
+      "name": "model.vae_encoder.layers.1.self_attn.in_proj_weight",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 786432,
+      "sha256": "08b29fcbbceb6051ce62ff5ed6da6cb24119728e5edd15560fa068a8ae642ed1"
+    },
+    {
+      "name": "model.vae_encoder.layers.1.self_attn.in_proj_bias",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 1536,
+      "sha256": "fd9243e1ba57263ed469c3bdbd7ade6ec5254e7ed924a9f5737fa44749933cc0"
+    },
+    {
+      "name": "model.vae_encoder.layers.1.self_attn.out_proj.weight",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 262144,
+      "sha256": "7bac48f37b77f086531f23468d7d8825a201eacc0c4ecabd1483158dbad0f989"
+    },
+    {
+      "name": "model.vae_encoder.layers.1.self_attn.out_proj.bias",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+    },
+    {
+      "name": "model.vae_encoder.layers.1.linear1.weight",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 1638400,
+      "sha256": "4f4a84f8a7c95db20084733d7f641ba8ac06de63a07e4003080a5be91844d8ce"
+    },
+    {
+      "name": "model.vae_encoder.layers.1.linear1.bias",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 3200,
+      "sha256": "4776b8318c2da6ca19782d500f386b4e543bd9c35649decc5072efb355d62868"
+    },
+    {
+      "name": "model.vae_encoder.layers.1.linear2.weight",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 1638400,
+      "sha256": "23d0334d506ab54483f058803d88d11b578a067d07d5bf39a5304cbea7874820"
+    },
+    {
+      "name": "model.vae_encoder.layers.1.linear2.bias",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "593df5c225a961a6f2c9a885c7c529c263292462bf0a43fdfd5c6b1d37490f9d"
+    },
+    {
+      "name": "model.vae_encoder.layers.1.norm1.weight",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "fef951e6c76ad6a01b208af650ca6d95769bec840e009981c5ae1316a42c90b1"
+    },
+    {
+      "name": "model.vae_encoder.layers.1.norm1.bias",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+    },
+    {
+      "name": "model.vae_encoder.layers.1.norm2.weight",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "fef951e6c76ad6a01b208af650ca6d95769bec840e009981c5ae1316a42c90b1"
+    },
+    {
+      "name": "model.vae_encoder.layers.1.norm2.bias",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+    },
+    {
+      "name": "model.vae_encoder.layers.2.self_attn.in_proj_weight",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 786432,
+      "sha256": "d7570518cc17c8ee78066bcc3a8b5336b30258b106fba45cdcbf0d59db9878be"
+    },
+    {
+      "name": "model.vae_encoder.layers.2.self_attn.in_proj_bias",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 1536,
+      "sha256": "fd9243e1ba57263ed469c3bdbd7ade6ec5254e7ed924a9f5737fa44749933cc0"
+    },
+    {
+      "name": "model.vae_encoder.layers.2.self_attn.out_proj.weight",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 262144,
+      "sha256": "81510bcfb92592d03edb636cccc9faa2d7b97db1a38f7d95b89d8753bfb5e7e0"
+    },
+    {
+      "name": "model.vae_encoder.layers.2.self_attn.out_proj.bias",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+    },
+    {
+      "name": "model.vae_encoder.layers.2.linear1.weight",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 1638400,
+      "sha256": "2c03a262a048e9ec58a7c200a472b999fe30527a46eab3dc0710e581c527a999"
+    },
+    {
+      "name": "model.vae_encoder.layers.2.linear1.bias",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 3200,
+      "sha256": "bca265e2b3fe7136294413137d73b0da1a9615e28b2689c0601236b6dd11e790"
+    },
+    {
+      "name": "model.vae_encoder.layers.2.linear2.weight",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 1638400,
+      "sha256": "3b35e6363181fa82963bd941a8d3d8d1fe78b5db75ea3e20246b5425c1578dc6"
+    },
+    {
+      "name": "model.vae_encoder.layers.2.linear2.bias",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "45652869ea0f07286a5ac3305caab1144b0a6c2ee2adcb4db97b0042eb56d321"
+    },
+    {
+      "name": "model.vae_encoder.layers.2.norm1.weight",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "fef951e6c76ad6a01b208af650ca6d95769bec840e009981c5ae1316a42c90b1"
+    },
+    {
+      "name": "model.vae_encoder.layers.2.norm1.bias",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+    },
+    {
+      "name": "model.vae_encoder.layers.2.norm2.weight",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "fef951e6c76ad6a01b208af650ca6d95769bec840e009981c5ae1316a42c90b1"
+    },
+    {
+      "name": "model.vae_encoder.layers.2.norm2.bias",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+    },
+    {
+      "name": "model.vae_encoder.layers.3.self_attn.in_proj_weight",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 786432,
+      "sha256": "dcd10a90751762bff55867c6f4a45f967d7b3a06d55d6aec8653f359db6bbbea"
+    },
+    {
+      "name": "model.vae_encoder.layers.3.self_attn.in_proj_bias",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 1536,
+      "sha256": "fd9243e1ba57263ed469c3bdbd7ade6ec5254e7ed924a9f5737fa44749933cc0"
+    },
+    {
+      "name": "model.vae_encoder.layers.3.self_attn.out_proj.weight",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 262144,
+      "sha256": "3f93d8a76e003e5fc4077a1e4b0b207beef63d52d2389629d120285ef2e856ea"
+    },
+    {
+      "name": "model.vae_encoder.layers.3.self_attn.out_proj.bias",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+    },
+    {
+      "name": "model.vae_encoder.layers.3.linear1.weight",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 1638400,
+      "sha256": "dbcad54d3afcb8753996076e10f21bfcd0e3eef90a257077219f553de76419b9"
+    },
+    {
+      "name": "model.vae_encoder.layers.3.linear1.bias",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 3200,
+      "sha256": "6d2c100abf7604c8922839eb4df66d11680a40868b72e6354222b13fcd7d7b52"
+    },
+    {
+      "name": "model.vae_encoder.layers.3.linear2.weight",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 1638400,
+      "sha256": "1a5b490e9294e587dd6957090446d68512b31091bc69ed6f6fe838639e2e78b6"
+    },
+    {
+      "name": "model.vae_encoder.layers.3.linear2.bias",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "208e61d7cdbf51dc8d119d0cc1086c6bbb60128b23364a0f5660a32beee87f17"
+    },
+    {
+      "name": "model.vae_encoder.layers.3.norm1.weight",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "fef951e6c76ad6a01b208af650ca6d95769bec840e009981c5ae1316a42c90b1"
+    },
+    {
+      "name": "model.vae_encoder.layers.3.norm1.bias",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+    },
+    {
+      "name": "model.vae_encoder.layers.3.norm2.weight",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "fef951e6c76ad6a01b208af650ca6d95769bec840e009981c5ae1316a42c90b1"
+    },
+    {
+      "name": "model.vae_encoder.layers.3.norm2.bias",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+    },
+    {
+      "name": "model.vae_encoder_cls_embed.weight",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "8792b0cdcf825958e12746872aa50e1ef5ebc3d8839c6f6d406fd50e91eda1b2"
+    },
+    {
+      "name": "model.vae_encoder_robot_state_input_proj.weight",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 3072,
+      "sha256": "3880f880d6c729a2bbbb7c2e6995a11e71aaebeb4d164d3e184d92ad8ae4580d"
+    },
+    {
+      "name": "model.vae_encoder_robot_state_input_proj.bias",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "65c7ab37f6c1015c7cfb442578c114c4efdc0830aebe9cf71f4db8b3e231d425"
+    },
+    {
+      "name": "model.vae_encoder_action_input_proj.weight",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 3072,
+      "sha256": "c9771b179842fa6d254a0ad41c9094e809f9f21be349a7d03f8ee2fe5b559204"
+    },
+    {
+      "name": "model.vae_encoder_action_input_proj.bias",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "2336bc58c7c394e5401ee6c0a41abbc72276f12db1bf0d3813411b5769570a0a"
+    },
+    {
+      "name": "model.vae_encoder_latent_output_proj.weight",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 32768,
+      "sha256": "f83ffec54bce03460a20b5c0dd7bbe7c4f398696b6f6a078f6ce19464a4f4051"
+    },
+    {
+      "name": "model.vae_encoder_latent_output_proj.bias",
+      "group": "CVAE encoder (train-time only)",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 64,
+      "sha256": "0eec4cec5348da7846c80da610fd273f2a0c12b045dac0bb2c8aa84df6dbdea1"
+    },
+    {
+      "name": "model.backbone.conv1.weight",
+      "group": "ResNet18 backbone (ImageNet-pretrained)",
+      "init_source": "pretrained_imagenet",
+      "requires_grad": true,
+      "numel": 9408,
+      "sha256": "3b3965901bdef70e4818b71aa892c3f1a58844e659b39e0bff24d57ef3270b20"
+    },
+    {
+      "name": "model.backbone.layer1.0.conv1.weight",
+      "group": "ResNet18 backbone (ImageNet-pretrained)",
+      "init_source": "pretrained_imagenet",
+      "requires_grad": true,
+      "numel": 36864,
+      "sha256": "6814a091d7818b136cf0d6fcef665bb5925bcbe26414c66dbfe88af664dd182f"
+    },
+    {
+      "name": "model.backbone.layer1.0.conv2.weight",
+      "group": "ResNet18 backbone (ImageNet-pretrained)",
+      "init_source": "pretrained_imagenet",
+      "requires_grad": true,
+      "numel": 36864,
+      "sha256": "79e2b89155e7fed1ca4d362db418373e75c662cfcb585666bbd86a91532e8949"
+    },
+    {
+      "name": "model.backbone.layer1.1.conv1.weight",
+      "group": "ResNet18 backbone (ImageNet-pretrained)",
+      "init_source": "pretrained_imagenet",
+      "requires_grad": true,
+      "numel": 36864,
+      "sha256": "fe5cb9798c51687b1421aaeb22dfa3ac47c2c755e9b5f276f3012d264c0f1dee"
+    },
+    {
+      "name": "model.backbone.layer1.1.conv2.weight",
+      "group": "ResNet18 backbone (ImageNet-pretrained)",
+      "init_source": "pretrained_imagenet",
+      "requires_grad": true,
+      "numel": 36864,
+      "sha256": "ff98f0523339f2fa604d2a22bff1cfdf3b9963afc5fb4a9d8b627e71685b1ae6"
+    },
+    {
+      "name": "model.backbone.layer2.0.conv1.weight",
+      "group": "ResNet18 backbone (ImageNet-pretrained)",
+      "init_source": "pretrained_imagenet",
+      "requires_grad": true,
+      "numel": 73728,
+      "sha256": "e916dd21ef515b857e8c432ef7b8b9ca6f560b0fe699276e18d7c2e1372dc10f"
+    },
+    {
+      "name": "model.backbone.layer2.0.conv2.weight",
+      "group": "ResNet18 backbone (ImageNet-pretrained)",
+      "init_source": "pretrained_imagenet",
+      "requires_grad": true,
+      "numel": 147456,
+      "sha256": "68c05777847631861080d1381b3af6dcf1c9c3c340d7496748168f557021cc5e"
+    },
+    {
+      "name": "model.backbone.layer2.0.downsample.0.weight",
+      "group": "ResNet18 backbone (ImageNet-pretrained)",
+      "init_source": "pretrained_imagenet",
+      "requires_grad": true,
+      "numel": 8192,
+      "sha256": "1f9a838e4257580a53b8c808478b52469d5edd130d3972c541407103bda8055a"
+    },
+    {
+      "name": "model.backbone.layer2.1.conv1.weight",
+      "group": "ResNet18 backbone (ImageNet-pretrained)",
+      "init_source": "pretrained_imagenet",
+      "requires_grad": true,
+      "numel": 147456,
+      "sha256": "e89fc37284427419e72a75fe2622d23f3d3c2b1cb736808bb33b39cf1ede6df7"
+    },
+    {
+      "name": "model.backbone.layer2.1.conv2.weight",
+      "group": "ResNet18 backbone (ImageNet-pretrained)",
+      "init_source": "pretrained_imagenet",
+      "requires_grad": true,
+      "numel": 147456,
+      "sha256": "3faf72c43063d4dbdce04370f9ff1d0d573b42dfc7c4b1aa02fe88746580ccaf"
+    },
+    {
+      "name": "model.backbone.layer3.0.conv1.weight",
+      "group": "ResNet18 backbone (ImageNet-pretrained)",
+      "init_source": "pretrained_imagenet",
+      "requires_grad": true,
+      "numel": 294912,
+      "sha256": "da518b40ae3e34435465158d0060bf4c6780676464f1b7d400ba8680e98ab94d"
+    },
+    {
+      "name": "model.backbone.layer3.0.conv2.weight",
+      "group": "ResNet18 backbone (ImageNet-pretrained)",
+      "init_source": "pretrained_imagenet",
+      "requires_grad": true,
+      "numel": 589824,
+      "sha256": "c2791f971dc2f097e7d828b5abfe55554e43e582bf0ebe87da14724703babeeb"
+    },
+    {
+      "name": "model.backbone.layer3.0.downsample.0.weight",
+      "group": "ResNet18 backbone (ImageNet-pretrained)",
+      "init_source": "pretrained_imagenet",
+      "requires_grad": true,
+      "numel": 32768,
+      "sha256": "a34bf70a49ad5257944ff4d1afd3fd94f1b0bac8f3a80f23c69e75103100de63"
+    },
+    {
+      "name": "model.backbone.layer3.1.conv1.weight",
+      "group": "ResNet18 backbone (ImageNet-pretrained)",
+      "init_source": "pretrained_imagenet",
+      "requires_grad": true,
+      "numel": 589824,
+      "sha256": "0e4d685d0e7f6ad16118f5c5d28607ba6b3119530fe2cc0b5e2d1059b1b2c820"
+    },
+    {
+      "name": "model.backbone.layer3.1.conv2.weight",
+      "group": "ResNet18 backbone (ImageNet-pretrained)",
+      "init_source": "pretrained_imagenet",
+      "requires_grad": true,
+      "numel": 589824,
+      "sha256": "a409d55d29eb3d7d904a9d9727327cee12e5f4a387fcbe940c7c6d62c7c722cb"
+    },
+    {
+      "name": "model.backbone.layer4.0.conv1.weight",
+      "group": "ResNet18 backbone (ImageNet-pretrained)",
+      "init_source": "pretrained_imagenet",
+      "requires_grad": true,
+      "numel": 1179648,
+      "sha256": "6aabf6c76fcb935d99fb9919fc323986b108072ccb93b438a43bedc8b7d63409"
+    },
+    {
+      "name": "model.backbone.layer4.0.conv2.weight",
+      "group": "ResNet18 backbone (ImageNet-pretrained)",
+      "init_source": "pretrained_imagenet",
+      "requires_grad": true,
+      "numel": 2359296,
+      "sha256": "ec4c1b1c383d8c019685108807a09f37b6cdd3ef9f15ed67f7b49aacc7a93825"
+    },
+    {
+      "name": "model.backbone.layer4.0.downsample.0.weight",
+      "group": "ResNet18 backbone (ImageNet-pretrained)",
+      "init_source": "pretrained_imagenet",
+      "requires_grad": true,
+      "numel": 131072,
+      "sha256": "21677ba088cdb7767348cc46a5ed9d3a7a7d4061f12e13df3da52fa22741b066"
+    },
+    {
+      "name": "model.backbone.layer4.1.conv1.weight",
+      "group": "ResNet18 backbone (ImageNet-pretrained)",
+      "init_source": "pretrained_imagenet",
+      "requires_grad": true,
+      "numel": 2359296,
+      "sha256": "673928e1402137e08e8abb3b095a38f34b03af97d37b027e67206261b9c46e50"
+    },
+    {
+      "name": "model.backbone.layer4.1.conv2.weight",
+      "group": "ResNet18 backbone (ImageNet-pretrained)",
+      "init_source": "pretrained_imagenet",
+      "requires_grad": true,
+      "numel": 2359296,
+      "sha256": "2875c9704e953b056a6bf6812162e7604ccf221c3c31935005ad6bbafaab355a"
+    },
+    {
+      "name": "model.encoder.layers.0.self_attn.in_proj_weight",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 786432,
+      "sha256": "73ecadad9287ac5d25d2b09908dd33569f148ba2196837403f5eecdbc6da5d61"
+    },
+    {
+      "name": "model.encoder.layers.0.self_attn.in_proj_bias",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 1536,
+      "sha256": "fd9243e1ba57263ed469c3bdbd7ade6ec5254e7ed924a9f5737fa44749933cc0"
+    },
+    {
+      "name": "model.encoder.layers.0.self_attn.out_proj.weight",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 262144,
+      "sha256": "376d091172571a8049bc726a0a481ee4a6f1b37fb81a37b7af51c8c174b551d8"
+    },
+    {
+      "name": "model.encoder.layers.0.self_attn.out_proj.bias",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+    },
+    {
+      "name": "model.encoder.layers.0.linear1.weight",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 1638400,
+      "sha256": "9d86ffe11930085f720954bfe5c02e1f3037e0af67812d89def44f24d38766f6"
+    },
+    {
+      "name": "model.encoder.layers.0.linear1.bias",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 3200,
+      "sha256": "13c61a21a8fd7e68e5171474c119f6b834a3c1665b361e96b556c57c83528f91"
+    },
+    {
+      "name": "model.encoder.layers.0.linear2.weight",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 1638400,
+      "sha256": "36f3eafa054155d46f6e6b3c2786716b13047b26e71d53d3f8891e9722877a55"
+    },
+    {
+      "name": "model.encoder.layers.0.linear2.bias",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "1351055b60b59b47ea90929cd3fe6680917f8f4908d81becf72d243453e2df1b"
+    },
+    {
+      "name": "model.encoder.layers.0.norm1.weight",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "fef951e6c76ad6a01b208af650ca6d95769bec840e009981c5ae1316a42c90b1"
+    },
+    {
+      "name": "model.encoder.layers.0.norm1.bias",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+    },
+    {
+      "name": "model.encoder.layers.0.norm2.weight",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "fef951e6c76ad6a01b208af650ca6d95769bec840e009981c5ae1316a42c90b1"
+    },
+    {
+      "name": "model.encoder.layers.0.norm2.bias",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+    },
+    {
+      "name": "model.encoder.layers.1.self_attn.in_proj_weight",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 786432,
+      "sha256": "ec8c72470839e3908934430871401c799183dae05d39a31a92ed30d28f7f769d"
+    },
+    {
+      "name": "model.encoder.layers.1.self_attn.in_proj_bias",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 1536,
+      "sha256": "fd9243e1ba57263ed469c3bdbd7ade6ec5254e7ed924a9f5737fa44749933cc0"
+    },
+    {
+      "name": "model.encoder.layers.1.self_attn.out_proj.weight",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 262144,
+      "sha256": "dea5e81ba6ca307b448c3c00e5a5724fc0fc64c52215b5fe3417361d0dafc5e1"
+    },
+    {
+      "name": "model.encoder.layers.1.self_attn.out_proj.bias",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+    },
+    {
+      "name": "model.encoder.layers.1.linear1.weight",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 1638400,
+      "sha256": "55b4fe832eaf5f400f421e2f85f05bfffbc10efb88724fd8d218000f73ad31a7"
+    },
+    {
+      "name": "model.encoder.layers.1.linear1.bias",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 3200,
+      "sha256": "5becfd51ababa8db051d071d3e716066793daee4792e59b99a8474b99c495740"
+    },
+    {
+      "name": "model.encoder.layers.1.linear2.weight",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 1638400,
+      "sha256": "34edaf13fc3f05328019ee9193e0ada412d8edda3efb1acae6fcbae5454f7053"
+    },
+    {
+      "name": "model.encoder.layers.1.linear2.bias",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "83dbb126b378c96f36e76cbb775d90410ca14d0c599b209ae0c21ceed0bd3492"
+    },
+    {
+      "name": "model.encoder.layers.1.norm1.weight",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "fef951e6c76ad6a01b208af650ca6d95769bec840e009981c5ae1316a42c90b1"
+    },
+    {
+      "name": "model.encoder.layers.1.norm1.bias",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+    },
+    {
+      "name": "model.encoder.layers.1.norm2.weight",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "fef951e6c76ad6a01b208af650ca6d95769bec840e009981c5ae1316a42c90b1"
+    },
+    {
+      "name": "model.encoder.layers.1.norm2.bias",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+    },
+    {
+      "name": "model.encoder.layers.2.self_attn.in_proj_weight",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 786432,
+      "sha256": "08b4e6b7381f99e5dd4b7abb4ec1e0c79c04ee9cfd995db77dd907179e817761"
+    },
+    {
+      "name": "model.encoder.layers.2.self_attn.in_proj_bias",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 1536,
+      "sha256": "fd9243e1ba57263ed469c3bdbd7ade6ec5254e7ed924a9f5737fa44749933cc0"
+    },
+    {
+      "name": "model.encoder.layers.2.self_attn.out_proj.weight",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 262144,
+      "sha256": "af6bf7584e3819baf8417d165fd910ef8cf4be4cbec8d6bd37488028df3b0aee"
+    },
+    {
+      "name": "model.encoder.layers.2.self_attn.out_proj.bias",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+    },
+    {
+      "name": "model.encoder.layers.2.linear1.weight",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 1638400,
+      "sha256": "dc4e92141749f979027566af1866a1216f50a8a4a6fbfff2a8118dc0b4585aa1"
+    },
+    {
+      "name": "model.encoder.layers.2.linear1.bias",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 3200,
+      "sha256": "6f66053410589cb82b95a1daf4b56453cab4af70a5b49157abd419e443f4cbde"
+    },
+    {
+      "name": "model.encoder.layers.2.linear2.weight",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 1638400,
+      "sha256": "d592ab446410079f29f2c1f039ae5974eb9ef42a73b3005c9bda640ae11c665d"
+    },
+    {
+      "name": "model.encoder.layers.2.linear2.bias",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "cb4524b0eb168017d25b9309ca1194cd46d24d91e7d57541f9fca45157869ba4"
+    },
+    {
+      "name": "model.encoder.layers.2.norm1.weight",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "fef951e6c76ad6a01b208af650ca6d95769bec840e009981c5ae1316a42c90b1"
+    },
+    {
+      "name": "model.encoder.layers.2.norm1.bias",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+    },
+    {
+      "name": "model.encoder.layers.2.norm2.weight",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "fef951e6c76ad6a01b208af650ca6d95769bec840e009981c5ae1316a42c90b1"
+    },
+    {
+      "name": "model.encoder.layers.2.norm2.bias",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+    },
+    {
+      "name": "model.encoder.layers.3.self_attn.in_proj_weight",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 786432,
+      "sha256": "27365ab0f52bdba2b60324b5d20bbb0fdfc73a7e4a7a0f47362b544e8f6670c1"
+    },
+    {
+      "name": "model.encoder.layers.3.self_attn.in_proj_bias",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 1536,
+      "sha256": "fd9243e1ba57263ed469c3bdbd7ade6ec5254e7ed924a9f5737fa44749933cc0"
+    },
+    {
+      "name": "model.encoder.layers.3.self_attn.out_proj.weight",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 262144,
+      "sha256": "ff2a1519080f97d97448e21a99caf19e4b6a7fef8ffcd625c04bf95bd6d598dd"
+    },
+    {
+      "name": "model.encoder.layers.3.self_attn.out_proj.bias",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+    },
+    {
+      "name": "model.encoder.layers.3.linear1.weight",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 1638400,
+      "sha256": "0181d5bf49e3d114e483c982cc7b794658e74836df32215288f680b281f1ce7f"
+    },
+    {
+      "name": "model.encoder.layers.3.linear1.bias",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 3200,
+      "sha256": "31de6153c851eecebb3690f8442ce038596e5846002cace397b89920081a09fb"
+    },
+    {
+      "name": "model.encoder.layers.3.linear2.weight",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 1638400,
+      "sha256": "eea9a4edbf6bde1337f3763bb79b764d6141e8f2d60596cfbf083550ceb78941"
+    },
+    {
+      "name": "model.encoder.layers.3.linear2.bias",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "75f39bbecb8a83640d0b7e3c3155348b7a6ed49dc7f2c2875c9b722f2d8acb9b"
+    },
+    {
+      "name": "model.encoder.layers.3.norm1.weight",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "fef951e6c76ad6a01b208af650ca6d95769bec840e009981c5ae1316a42c90b1"
+    },
+    {
+      "name": "model.encoder.layers.3.norm1.bias",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+    },
+    {
+      "name": "model.encoder.layers.3.norm2.weight",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "fef951e6c76ad6a01b208af650ca6d95769bec840e009981c5ae1316a42c90b1"
+    },
+    {
+      "name": "model.encoder.layers.3.norm2.bias",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+    },
+    {
+      "name": "model.decoder.layers.0.self_attn.in_proj_weight",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 786432,
+      "sha256": "b42eaa1d28c3ec85dae9ee24dccaf1bea01d5c28f0bf87bbbee03dadfe3f03ec"
+    },
+    {
+      "name": "model.decoder.layers.0.self_attn.in_proj_bias",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 1536,
+      "sha256": "fd9243e1ba57263ed469c3bdbd7ade6ec5254e7ed924a9f5737fa44749933cc0"
+    },
+    {
+      "name": "model.decoder.layers.0.self_attn.out_proj.weight",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 262144,
+      "sha256": "d5b2ca398bd341302c8292e52cc9a4ca22b90904f0cb1d1ba87ad1d7d8606a50"
+    },
+    {
+      "name": "model.decoder.layers.0.self_attn.out_proj.bias",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+    },
+    {
+      "name": "model.decoder.layers.0.multihead_attn.in_proj_weight",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 786432,
+      "sha256": "43cfd10e8d9054ddaf364bd76179ad722966a8f80a8bbd80776be769b4283598"
+    },
+    {
+      "name": "model.decoder.layers.0.multihead_attn.in_proj_bias",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 1536,
+      "sha256": "fd9243e1ba57263ed469c3bdbd7ade6ec5254e7ed924a9f5737fa44749933cc0"
+    },
+    {
+      "name": "model.decoder.layers.0.multihead_attn.out_proj.weight",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 262144,
+      "sha256": "893cf000bdd825585606e6aa0c250fa1daf173e7152a14fddfaa35b691f33403"
+    },
+    {
+      "name": "model.decoder.layers.0.multihead_attn.out_proj.bias",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+    },
+    {
+      "name": "model.decoder.layers.0.linear1.weight",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 1638400,
+      "sha256": "8d33b3d68111975685cc6bf3b32f821d56c76c9a6a7b24b53c7c06ca8dfc7881"
+    },
+    {
+      "name": "model.decoder.layers.0.linear1.bias",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 3200,
+      "sha256": "ba268d1db1c8cfb49e90b01a55acde9489d5254700d242b7bdab38c2b0858de3"
+    },
+    {
+      "name": "model.decoder.layers.0.linear2.weight",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 1638400,
+      "sha256": "0c529aca897fdbfc6bb140a29b725702fbc5e951f922048c5539a2421f76c7c9"
+    },
+    {
+      "name": "model.decoder.layers.0.linear2.bias",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "0eb3a7a7053d9bfcaaecc3a28b8d87dda78116b3cd50cbb595af0c0c97d00237"
+    },
+    {
+      "name": "model.decoder.layers.0.norm1.weight",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "fef951e6c76ad6a01b208af650ca6d95769bec840e009981c5ae1316a42c90b1"
+    },
+    {
+      "name": "model.decoder.layers.0.norm1.bias",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+    },
+    {
+      "name": "model.decoder.layers.0.norm2.weight",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "fef951e6c76ad6a01b208af650ca6d95769bec840e009981c5ae1316a42c90b1"
+    },
+    {
+      "name": "model.decoder.layers.0.norm2.bias",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+    },
+    {
+      "name": "model.decoder.layers.0.norm3.weight",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "fef951e6c76ad6a01b208af650ca6d95769bec840e009981c5ae1316a42c90b1"
+    },
+    {
+      "name": "model.decoder.layers.0.norm3.bias",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+    },
+    {
+      "name": "model.decoder.norm.weight",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "fef951e6c76ad6a01b208af650ca6d95769bec840e009981c5ae1316a42c90b1"
+    },
+    {
+      "name": "model.decoder.norm.bias",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+    },
+    {
+      "name": "model.encoder_robot_state_input_proj.weight",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 3072,
+      "sha256": "084a3d594a09cfa1be1e4e085e48c742c88b54d74e1da8aad5160f6aab99881e"
+    },
+    {
+      "name": "model.encoder_robot_state_input_proj.bias",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "de41a9c2d85a44438180f4f4eb78d41cfed6fc821f551d61d86a760b693a356e"
+    },
+    {
+      "name": "model.encoder_latent_input_proj.weight",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 16384,
+      "sha256": "b1c079db1e49017c96ed279ec54ee3adec41e85b42d977134542fefbdeb21efa"
+    },
+    {
+      "name": "model.encoder_latent_input_proj.bias",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "d3701bf77414dc0c1b838a5e5fd3c5ed481b2413c3c0ebcca1de6cbb072d6d97"
+    },
+    {
+      "name": "model.encoder_img_feat_input_proj.weight",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 262144,
+      "sha256": "b5d7ae4189717d2cac817a9e93d727aa9b7ba1da14eeab35e95b06e975d3b4ab"
+    },
+    {
+      "name": "model.encoder_img_feat_input_proj.bias",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 512,
+      "sha256": "2abb0e842fff70eaeec659e651d4bb454a026be02774861f5da2b5420d8a3739"
+    },
+    {
+      "name": "model.encoder_1d_feature_pos_embed.weight",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 1024,
+      "sha256": "5caf7b1a45a0766d7977bb61e7688b1d315c236213d7098dad3b6b66201a9b31"
+    },
+    {
+      "name": "model.decoder_pos_embed.weight",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 25600,
+      "sha256": "d7ad55df8bfb083b2e444e42ed04fd503aff431430d0cdefcc79a0327d5f71e6"
+    },
+    {
+      "name": "model.action_head.weight",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 3072,
+      "sha256": "f5a580d637d48df26fc56fa32f50b8296fb06cd800919dc59ca1847572dbfaaa"
+    },
+    {
+      "name": "model.action_head.bias",
+      "group": "transformer encoder/decoder + projections",
+      "init_source": "scratch_trained",
+      "requires_grad": true,
+      "numel": 6,
+      "sha256": "84b6eaf18cc93e0284581b5cac46670bff81de4c340b42581a9dae8a4d244d9b"
+    }
+  ]
+}
