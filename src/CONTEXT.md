@@ -34,7 +34,7 @@ project-root/
 ├── code/          # ALL .ipynb notebooks — READ-ONLY
 │   └── *.ipynb
 ├── thesis/        # the report — the ONLY write target
-│   ├── Report_AIP491_CP.pdf
+│   ├── Report_AIP491_CP.md
 ├── results/       # experiment outputs, logs, metrics, figures — READ-ONLY
 └── context.md     # this file
 ```
