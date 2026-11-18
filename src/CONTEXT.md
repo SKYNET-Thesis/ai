@@ -30,13 +30,22 @@ Members      : Nguyễn Gia Phát (PM), Nguyễn Minh Đức (AI Eng),
 ## 2. Folder Contract & Mandatory Read-Before-Write
 
 ```
-project-root/
-├── code/          # ALL .ipynb notebooks — READ-ONLY
-│   └── *.ipynb
-├── thesis/        # the report — the ONLY write target
-│   ├── Report_AIP491_CP.md
-├── results/       # experiment outputs, logs, metrics, figures — READ-ONLY
-└── context.md     # this file
+src/
+├── code/
+│   └── Task1/
+│       ├── ACT_r1.ipynb
+│       ├── Smollervla_r4.ipynb
+│       ├── Smolvla_backbone_r3.ipynb
+│       └── Smolvla_r2.ipynb
+├── result/
+│   ├── Task1/
+│   │   ├── r1_act_test_log.txt
+│   │   ├── r2_smollervla_test_log.txt
+│   │   └── r3_smolvla_backbone_test_log.txt
+│   └── Task2/
+├── thesis/
+│   └── Report_AIP491_CP.md
+└── CONTEXT.md
 ```
 
 **Pre-flight rule (non-negotiable).** Before you write, edit, verify, or review anything, you MUST:
