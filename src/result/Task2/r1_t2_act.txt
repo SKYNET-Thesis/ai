@@ -1,0 +1,137 @@
+
+====================================================================================================
+RUN act_c50_dec7_s42   status=degenerate   valid=False
+====================================================================================================
+model_key        : ACT_C50_D7   (ACT, chunk_size=50, decoder_layers=7, use_vae=True)
+params           : total 83,880,582   trainable 83,880,582   active 66,507,334
+   CVAE encoder (train-time only)             total    17,373,248   trainable    17,373,248
+   ResNet18 backbone (ImageNet-pretrained)    total    11,166,912   trainable    11,166,912
+   transformer encoder/decoder + projections  total    55,340,422   trainable    55,340,422
+steps / batch    : 4000 steps, batch/GPU 16, effective 32, GPUs 2
+best step        : 50   best val loss 0.77698   first val loss 0.84992
+val improvement  : 8.6%  (degenerate if < 20%)
+time to best     : 2.7 min   full run 192.2 min   15.7 samples/s   peak train VRAM 12.2 GB
+
+====================================================================================================
+TRAINING HISTORY
+====================================================================================================
+401 train rows, 400 validation rows
+last train row   : step 4000  loss 0.4473  grad_norm 63422739672.209  lr 1.000e-05
+Validation rows (every new best + last 10):
+ step  val_loss  val_loss_sd_over_episodes  n_val_episodes is_best  best_val_loss  wall_time_s
+   10   0.84992                    0.06188            24.0    True        0.84992        35.99
+   20   0.82641                    0.07325            24.0    True        0.82641        66.23
+   30   0.81327                    0.08125            24.0    True        0.81327        98.61
+   40   0.78535                    0.07578            24.0    True        0.78535       130.68
+   50   0.77698                    0.07537            24.0    True        0.77698       162.31
+ 3910   1.41044                    0.19180            24.0   False        0.77698     11272.64
+ 3920   1.37444                    0.18901            24.0   False        0.77698     11301.10
+ 3930   1.34757                    0.19323            24.0   False        0.77698     11330.22
+ 3940   1.45966                    0.19667            24.0   False        0.77698     11358.68
+ 3950   1.33507                    0.18724            24.0   False        0.77698     11387.75
+ 3960   1.44065                    0.19406            24.0   False        0.77698     11416.34
+ 3970   1.42572                    0.19281            24.0   False        0.77698     11445.33
+ 3980   1.34880                    0.18542            24.0   False        0.77698     11473.57
+ 3990   1.39152                    0.19368            24.0   False        0.77698     11502.60
+ 4000   1.37382                    0.18906            24.0   False        0.77698     11531.66
+
+====================================================================================================
+TEST-STYLE METRICS DURING TRAINING (validation episodes, deterministic ACT inference)  [test_log.csv]
+====================================================================================================
+Rows (every new best + last 10):
+ step  val_loss  is_best  mae_mean  nmae_mean   mse_mean  rmse_mean  jerk_norm_mean  accel_norm_mean  smoothness_ratio_mean
+   10   0.84992     True  24.05739    0.85441 1213.49938   32.48163         0.03397          0.01842               19.36643
+   20   0.82641     True  23.88706    0.83080 1138.88358   32.01171         0.02997          0.01622               17.11849
+   30   0.81327     True  24.05343    0.81758 1144.66508   32.31648         0.02779          0.01501               15.74135
+   40   0.78535     True  22.91085    0.78938 1101.74699   31.01128         0.02695          0.01453               15.30444
+   50   0.77698     True  22.78361    0.78100 1128.34279   31.20643         0.02699          0.01454               15.48254
+ 3910   1.41044    False  42.03983    1.41760 3432.91779   53.58041         0.01160          0.00635                6.42577
+ 3920   1.37444    False  40.99428    1.38141 3316.06100   52.50351         0.01215          0.00664                6.68104
+ 3930   1.34757    False  39.66891    1.35415 3124.90659   50.81088         0.01251          0.00685                6.90849
+ 3940   1.45966    False  42.45418    1.46649 3435.43708   53.72620         0.01163          0.00637                6.46553
+ 3950   1.33507    False  38.13547    1.34128 2885.69323   48.68608         0.01257          0.00689                7.00378
+ 3960   1.44065    False  42.48705    1.44748 3483.07379   54.03542         0.01177          0.00645                6.56231
+ 3970   1.42572    False  40.77581    1.43251 3183.33122   51.59363         0.01221          0.00668                6.77200
+ 3980   1.34880    False  38.37035    1.35457 2940.82483   48.96464         0.01272          0.00697                7.09441
+ 3990   1.39152    False  41.11169    1.39818 3316.01959   52.54593         0.01209          0.00662                6.70813
+ 4000   1.37382    False  40.43792    1.38053 3224.54549   51.71516         0.01239          0.00678                6.92346
+
+At the best checkpoint (step 50): mae=22.7836±2.7377  nmae=0.7810±0.0759  mse=1128.3428±205.9526  rmse=31.2064±3.5621  jerk_norm=0.0270±0.0012
+
+====================================================================================================
+TEST REPORT   (valid=False, 48 episodes, 432 windows, checkpoint step 50)
+====================================================================================================
+Metrics over test episodes (raw action units unless 'n'-prefixed; ci = 95% bootstrap over episodes):
+                       mean        sd    median        p90     ci_lo      ci_hi
+mae                 20.8834    4.3897   19.9785    27.3512   19.6680    22.1596
+nmae                 0.7242    0.1479    0.7005     0.9171    0.6841     0.7672
+mse               1015.8530  340.3596  926.7899  1459.0594  923.1339  1116.4383
+rmse                29.2644    5.8433   28.2203    37.6411   27.6562    30.9534
+jerk_norm            0.0157    0.0008    0.0157     0.0167    0.0155     0.0159
+accel_norm           0.0087    0.0004    0.0087     0.0092    0.0086     0.0088
+smoothness_ratio     7.9992    6.5192    5.6389    14.5448    6.4576    10.0494
+gt_jerk              0.0963    0.0090    0.0960     0.1083    0.0936     0.0988
+jerk_in_chunk        0.4542    0.0246    0.4572     0.4840    0.4473     0.4611
+
+MSE  mean 1015.8530   sd 340.3596   median 926.7899   p90 1459.0594   95% CI [923.1339, 1116.4383]
+
+Boundary jump (bjump): {'mean': 7.6242, 'sd': 6.5029, 'n_seams': 48, 'mode': 'seeded_one_seam_pair_per_episode'}
+
+Latency per action chunk (batch 1):
+n_runs           300
+warmup            10
+p50_ms     64.435117
+p95_ms     69.071582
+p99_ms     69.711162
+mean_ms    64.721691
+std_ms       2.37322
+device      Tesla T4
+dtype        float32
+
+Complexity:
+gflops_infer_chunk                                           115.667651
+gmacs_infer_chunk                                             57.833825
+gflops_forward                                               117.489537
+gflops_train_step                                            348.106871
+params_total                                                   83880582
+params_trainable                                               83880582
+params_active                                                  66507334
+peak_infer_vram_gb                                             1.525187
+counter                        torch.utils.flop_counter.FlopCounterMode
+counter_note          matmul/bmm/conv/sdpa only (1 MAC = 2 FLOPs); e...
+
+Protocol: {'windows_per_episode': 9, 'draws_per_window': 1, 'bootstrap_B': 10000, 'test_seed': 2024, 'nmae': 'mean_d(MAE_d / std_d(train))', 'jerk_norm': 'mean_d(mean|3rd diff|_d / std_d(train))', 'dtype': {'model': 'fp32'}, 'chunk_size': 50, 'n_decoder_layers': 7, 'inference': 'deterministic (z=0)'}
+train_action_std per dim: [21.8166 47.2971 45.7779 10.8575 32.3317  7.8515]
+
+warnings:
+   - bjump indicative only: n_seams=48 < 100
+
+====================================================================================================
+PER-EPISODE TEST RESULTS
+====================================================================================================
+By task:
+                                                           mae          nmae             mse       jerk_norm      
+                                                          mean count    mean count      mean count      mean count
+task                                                                                                              
+pick up one lamp from the box, place it into the tray  20.8834    48  0.7242    48  1015.853    48    0.0157    48
+
+Worst 10 episodes by MAE:
+ episode_id                                                  task  n_windows     mae   nmae       mse  jerk_norm
+        212 pick up one lamp from the box, place it into the tray          9 31.6644 1.1262 1676.4099     0.0156
+          3 pick up one lamp from the box, place it into the tray          9 29.5933 1.0807 2101.0934     0.0161
+        180 pick up one lamp from the box, place it into the tray          9 29.4054 1.0594 1652.3066     0.0143
+        214 pick up one lamp from the box, place it into the tray          9 28.7728 0.9385 1581.2331     0.0156
+        144 pick up one lamp from the box, place it into the tray          9 28.4768 0.9755 1444.2252     0.0146
+        216 pick up one lamp from the box, place it into the tray          9 26.8688 0.9079 1407.6736     0.0163
+        213 pick up one lamp from the box, place it into the tray          9 26.0437 0.8710 1389.5279     0.0166
+        235 pick up one lamp from the box, place it into the tray          9 25.4287 0.8850 1493.6727     0.0167
+         89 pick up one lamp from the box, place it into the tray          9 24.7210 0.8998 1035.7333     0.0170
+        233 pick up one lamp from the box, place it into the tray          9 24.3189 0.8485 1363.6124     0.0167
+
+Best 5 episodes by MAE:
+ episode_id                                                  task  n_windows     mae   nmae      mse  jerk_norm
+        127 pick up one lamp from the box, place it into the tray          9 13.7364 0.4920 527.3449     0.0162
+        166 pick up one lamp from the box, place it into the tray          9 14.4413 0.5452 614.4554     0.0155
+        165 pick up one lamp from the box, place it into the tray          9 14.7994 0.5046 694.5755     0.0163
+        112 pick up one lamp from the box, place it into the tray          9 15.7267 0.6101 616.2908     0.0148
+        130 pick up one lamp from the box, place it into the tray          9 15.9325 0.6023 685.5672     0.0157
